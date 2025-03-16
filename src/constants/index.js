@@ -1,3 +1,26 @@
+const techStackIcons = [
+  {
+    name: "React Developer",
+    imgPath: "/images/react.png",
+  },
+  {
+    name: "Mobile App Developer",
+    imgPath: "/images/react.png",
+  },
+  {
+    name: "Backend Developer",
+    imgPath: "/images/react.png",
+  },
+  {
+    name: " Interactive Developer",
+    imgPath: "/images/react.png",
+  },
+  {
+    name: "Project Manager",
+    imgPath: "/images/react.png",
+  },
+];
+
 const testimonials = [
   {
     name: "Esther Howard",
@@ -62,4 +85,4 @@ const socialImgs = [
   },
 ];
 
-export { testimonials, socialImgs };
+export { testimonials, socialImgs, techStackIcons };

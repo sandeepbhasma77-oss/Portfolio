@@ -30,4 +30,13 @@ section {
   .flex-center {
     @apply flex justify-center items-center;
   }
+  .flex-col-center {
+    @apply flex flex-col justify-center items-center;
+  }
+}
+
+@layer components {
+  .common-card {
+    @apply border border-black-50 bg-black-100;
+  }
 }

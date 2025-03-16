@@ -12,7 +12,7 @@ const Footer = () => {
           {socialImgs.map((socialImg, index) => (
             <div
               key={index}
-              className="bg-black-100 border border-black-50 size-12 flexcenter rounded-xl"
+              className="common-card size-12 flexcenter rounded-xl"
             >
               <img src={socialImg.imgPath} alt="icons" />
             </div>

@@ -2,7 +2,7 @@ import React from "react";
 
 const TestimonialsCard = ({ testimonial }) => {
   return (
-    <div className="border border-black-100 bg-black-50 rounded-xl p-10 mb-5 break-inside-avoid-column">
+    <div className="common-card rounded-xl p-10 mb-5 break-inside-avoid-column">
       <div className="flex items-center">
         {Array.from({ length: 5 }, (_, i) => (
           <img
