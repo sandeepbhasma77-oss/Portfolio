@@ -1,7 +1,12 @@
 import React from "react";
+import Testimonials from "./sections/Testimonials";
 
 const App = () => {
-  return <div className="text-red-500">App</div>;
+  return (
+    <div>
+      <Testimonials />
+    </div>
+  );
 };
 
 export default App;
