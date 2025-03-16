@@ -45,7 +45,7 @@ const ContactForm = () => {
           className="w-full py-4 bg-white text-black font-semibold rounded-md flex justify-center items-center gap-2"
         >
           Send Message
-          <img src="/images/arrow-right.svg" alt="arrow-right" className="" />
+          <img src="/images/arrow-right.svg" alt="arrow-right" />
         </button>
       </form>
     </div>

@@ -17,10 +17,10 @@ const TestimonialsCard = ({ testimonial }) => {
         <p className="text-white-50 text-lg">{testimonial.review}</p>
       </div>
       <div className="flex items-center gap-3">
-        <div className="">
+        <div>
           <img src={testimonial.imgPath} alt="" />
         </div>
-        <div className="">
+        <div>
           <p className="font-bold">{testimonial.name}</p>
           <p className="text-white-50">{testimonial.mentions}</p>
         </div>
