@@ -4,7 +4,7 @@ import ContactForm from "../components/ContactForm";
 
 const Contact = () => {
   return (
-    <section id="contact" className="flex-center py-10 md:py-20">
+    <section id="contact" className="flex-center py-10 md:py-20 md:px-0 px-5">
       <div className="w-full h-full container">
         <TitleHeader
           title="Get in Touch – Let’s Connect"
