@@ -1,3 +1,40 @@
+const countData = [
+  {
+    number: 15,
+    text: "Years of Experience",
+  },
+  {
+    number: 200,
+    text: "Satisfied Clients",
+  },
+  {
+    number: 108,
+    text: "Completed Projects",
+  },
+  {
+    number: 90,
+    text: "Client Retention Rate",
+  },
+];
+
+const abilities = [
+  {
+    imgPath: "/images/seo.png",
+    title: "SEO-Optimized",
+    desc: "Optimizing websites for better search rankings and organic traffic",
+  },
+  {
+    imgPath: "/images/devices.png",
+    title: "Seamless Across Devices",
+    desc: "Designing mobile-first, responsive layouts that deliver seamless user experiences.",
+  },
+  {
+    imgPath: "/images/time.png",
+    title: "Timely Delivery",
+    desc: "Ensuring projects are delivered on time without compromising quality & precision.",
+  },
+];
+
 const techStackIcons = [
   {
     name: "React Developer",
@@ -136,4 +173,12 @@ const socialImgs = [
   },
 ];
 
-export { expCards, expLogos, testimonials, socialImgs, techStackIcons };
+export {
+  abilities,
+  countData,
+  expCards,
+  expLogos,
+  testimonials,
+  socialImgs,
+  techStackIcons,
+};
