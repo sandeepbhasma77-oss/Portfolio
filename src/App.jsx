@@ -4,11 +4,12 @@ import Footer from "./sections/Footer";
 import Contact from "./sections/Contact";
 import TechStack from "./sections/TechStack";
 import Experience from "./sections/Experience";
+import Hero from "./sections/Hero";
 
 const App = () => {
   return (
     <div>
-      <section></section>
+      <Hero />
       <Experience />
       <TechStack />
       <Testimonials />
