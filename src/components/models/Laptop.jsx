@@ -9,7 +9,11 @@ Title: Macbook Pro 13 inch 2020
 */
 
 import React, { useEffect } from "react";
-import { useGLTF, useAnimations, useTexture } from "@react-three/drei";
+import {
+  useGLTF,
+  useAnimations,
+  useVideoTexture,
+} from "@react-three/drei";
 
 export function Laptop(props) {
   const group = React.useRef();
@@ -17,7 +21,7 @@ export function Laptop(props) {
     "/models/laptop-transformed.glb"
   );
   const { actions } = useAnimations(animations, group);
-  const screen = useTexture("/images/project2.png");
+  const screen = useVideoTexture("/images/screen.mp4");
 
   useEffect(() => {
     scene.traverse((child) => {
