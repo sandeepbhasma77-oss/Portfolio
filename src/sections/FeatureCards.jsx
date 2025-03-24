@@ -3,7 +3,7 @@ import { abilities } from "../constants";
 export default function FeatureCards() {
   return (
     <div className="w-full padding-x-lg">
-      <div className="mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+      <div className="mx-auto grid-3-cols">
         {abilities.map((ability, index) => (
           <div
             key={index}

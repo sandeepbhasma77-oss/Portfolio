@@ -28,7 +28,7 @@ const Hero = () => {
       <div className="absolute top-0 left-0 z-10">
         <img src="/images/bg.png" alt="bg" />
       </div>
-      <div className="grid md:grid-cols-2 relative z-10 xl:mt-20 mt-32">
+      <div className="grid-2-cols relative z-10 xl:mt-20 mt-32">
         <div className="flex-col-center md:w-full w-screen">
           <div className="padding-x-lg flex flex-col gap-7">
             <div className="bg-black-200 py-2 px-4 rounded-full w-fit">

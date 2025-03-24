@@ -49,10 +49,10 @@ export default function AppShowcase() {
     <div
       id="about"
       ref={sectionRef}
-      className="w-full xl:mt-20 md:mt-0 mt-40 flex-center"
+      className="w-full mt-responsive flex-center"
     >
       <div className="padding-x-lg mx-auto">
-        <div className="grid grid-cols-1 xl:grid-cols-12 gap-10">
+        <div className="grid-12-cols">
           {/* Ryde App Showcase - Takes full width on mobile, half width on desktop */}
           <div ref={rydeRef} className="lg:col-span-7">
             <div className="h-full flex flex-col justify-between">

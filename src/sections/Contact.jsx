@@ -11,7 +11,7 @@ const Contact = () => {
           title="Get in Touch – Let’s Connect"
           sub="💬 Have questions or ideas? Let’s talk! 🚀"
         />
-        <div className="grid grid-cols-1 md:grid-cols-12 mt-16">
+        <div className="grid-12-cols mt-16">
           <div className="md:col-span-5 col-span-12">
             <div className="flex-center common-card rounded-xl p-10">
               <form className="w-full flex flex-col gap-7">

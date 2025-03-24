@@ -31,7 +31,7 @@ export default function AnimatedCounter() {
 
   return (
     <div ref={counterRef} className="padding-x-lg xl:mt-0 mt-32">
-      <div className="mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-7">
+      <div className="mx-auto grid-4-cols">
         {counterItems.map((item, index) => (
           <div
             key={index}
