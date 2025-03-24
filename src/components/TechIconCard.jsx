@@ -1,6 +1,6 @@
 import React from "react";
-import TechIconCardExperience from "./TechIconCardExperience";
 import ModelLoader from "./ModelLoader";
+import TechIconCardExperience from "./models/TechIconCardExperience";
 
 const TechIconCard = ({ techStackIcon }) => {
   return (
