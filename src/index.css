@@ -1,5 +1,5 @@
-@import "tailwindcss";
 @import url("https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap");
+@import "tailwindcss";
 
 html,
 body {
@@ -36,11 +36,44 @@ section {
 }
 
 @layer components {
+  .padding-x {
+    @apply px-5 md:px-10;
+  }
+
+  .padding-x-lg {
+    @apply px-5 md:px-20;
+  }
+
+  .section-padding {
+    @apply px-5 md:px-10 py-10 md:py-20;
+  }
+
   .common-card {
     @apply border border-black-50 bg-black-100;
   }
+
   .timeline-logo {
     @apply xl:mb-[43vh] xl:nth-of-type-[2]:mb-[40vh] md:mb-[57vh] md:nth-of-type-[2]:mb-[57vh] lg:mb-[45vh] lg:nth-of-type-[2]:mb-[45vh] mb-[105vh] nth-of-type-[2]:mb-[101vh];
+  }
+
+  .gradient-edge {
+    @apply w-36 h-full absolute bottom-0 z-20;
+  }
+
+  .tech-card-content {
+    @apply flex flex-col md:justify-center items-center xl:gap-5 xl:h-[50vh];
+
+    & p {
+      @apply text-lg md:text-2xl font-semibold text-white-50 md:text-center;
+    }
+  }
+
+  .tech-grid {
+    @apply grid xl:grid-cols-5 md:grid-cols-3 grid-cols-1 xl:gap-16 md:gap-10 gap-5 mt-16;
+  }
+
+  .tech-icon-wrapper {
+    @apply flex justify-center items-center h-60 relative;
   }
 }
 
@@ -56,7 +89,8 @@ section {
   );
 }
 
-.gradient-left-box {
+.gradient-edge:nth-of-type(1) {
+  left: 0;
   background: rgb(0, 0, 0);
   background: linear-gradient(
     90deg,
@@ -64,7 +98,8 @@ section {
     rgba(255, 255, 255, 0) 100%
   );
 }
-.gradient-right-box {
+.gradient-edge:nth-of-type(2) {
+  right: 0;
   background: linear-gradient(
     -90deg,
     rgba(0, 0, 0, 1) 0%,

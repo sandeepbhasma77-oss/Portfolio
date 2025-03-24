@@ -5,7 +5,7 @@ import ContactExperience from "../components/models/ContactExperience";
 
 const Contact = () => {
   return (
-    <section id="contact" className="flex-center py-10 md:py-20 md:px-10 px-5">
+    <section id="contact" className="flex-center section-padding">
       <div className="w-full h-full container">
         <TitleHeader
           title="Get in Touch – Let’s Connect"

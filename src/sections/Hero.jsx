@@ -30,7 +30,7 @@ const Hero = () => {
       </div>
       <div className="grid md:grid-cols-2 relative z-10 xl:mt-20 mt-32">
         <div className="flex-col-center md:w-full w-screen">
-          <div className="md:px-20 px-5 flex flex-col gap-7">
+          <div className="padding-x-lg flex flex-col gap-7">
             <div className="bg-black-200 py-2 px-4 rounded-full w-fit">
               <p>🧠 Crafting Digital Solutions</p>
             </div>

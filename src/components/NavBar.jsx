@@ -20,8 +20,8 @@ export default function Navbar() {
       className={`header fixed w-full left-[50%] -translate-x-[50%]  
         z-[100] transition-all duration-300 ease-in-out md:py-7 ${
           scrolled
-            ? "bg-black top-0 px-6 md:px-10 xl:px-20 py-5"
-            : "bg-black top-10 px-5 md:px-20 xl:px-40 py-0"
+            ? "bg-black top-0 padding-x xl:px-20 py-5"
+            : "bg-black top-10 padding-x-lg xl:px-40 py-0"
         }`}
     >
       <div className="mx-auto flex items-center justify-between">
