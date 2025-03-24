@@ -66,21 +66,21 @@ const Experience = () => {
         />
         <div className="mt-32 relative">
           {/* timeline */}
-          <div className="absolute top-0 md:left-[39%] left-10 h-full flex justify-center">
+          <div className="absolute top-0 xl:left-[39%] left-10 h-full flex justify-center">
             <div className="timeline absolute h-[110%] -top-10 w-20 z-10 bg-black"></div>
             <div className="gradient-line w-1 h-full"></div>
             <div className="absolute h-full">
               {expLogos.map((expLogo, index) => (
                 <div
                   key={index}
-                  className="md:mb-[43vh] md:nth-of-type-[2]:mb-[40vh] mb-[105vh] nth-of-type-[2]:mb-[101vh] common-card rounded-full md:size-20 size-10 flex-center md:-translate-y-7"
+                  className="timeline-logo common-card rounded-full md:size-20 size-10 flex-center md:-translate-y-7"
                 >
                   <img src={expLogo.imgPath} alt="logo" />
                 </div>
               ))}
             </div>
           </div>
-          <div>
+          <div className="relative z-50">
             {expCards.map((expCard, index) => (
               <ExpCard key={index} expCard={expCard} />
             ))}

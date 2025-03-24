@@ -39,6 +39,9 @@ section {
   .common-card {
     @apply border border-black-50 bg-black-100;
   }
+  .timeline-logo {
+    @apply xl:mb-[43vh] xl:nth-of-type-[2]:mb-[40vh] md:mb-[57vh] md:nth-of-type-[2]:mb-[57vh] lg:mb-[45vh] lg:nth-of-type-[2]:mb-[45vh] mb-[105vh] nth-of-type-[2]:mb-[101vh];
+  }
 }
 
 .gradient-line {

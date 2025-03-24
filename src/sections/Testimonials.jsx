@@ -5,7 +5,7 @@ import TitleHeader from "../components/TitleHeader";
 
 const Testimonials = () => {
   return (
-    <section id="testimonials" className="flex-center py-10 md:py-20 md:px-0 px-5">
+    <section id="testimonials" className="flex-center py-10 md:py-20 md:px-10 px-5">
       <div className="w-full h-full container">
         <TitleHeader
           title="What People Say About Me?"

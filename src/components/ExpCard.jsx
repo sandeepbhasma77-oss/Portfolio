@@ -2,8 +2,8 @@ import React from "react";
 
 const ExpCard = ({ expCard }) => {
   return (
-    <div className="flex md:flex-row flex-col-reverse justify-between items-start mb-40 ">
-      <div className="md:w-[25vw] md:translate-y-0 translate-y-10 break-inside-avoid-column exp-card relative overflow-hidden">
+    <div className="flex xl:flex-row flex-col-reverse justify-between items-start mb-40 ">
+      <div className="xl:w-[25vw] xl:translate-y-0 translate-y-10 break-inside-avoid-column exp-card relative overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full bg-black curtain-card"></div>
         <div className="common-card rounded-xl md:p-10 p-5 mb-5">
           <div className="flex items-center">
@@ -24,7 +24,7 @@ const ExpCard = ({ expCard }) => {
           </div>
         </div>
       </div>
-      <div className=" md:w-[45vw] md:px-0 ps-20 overflow-hidden">
+      <div className="xl:w-[45vw] xl:px-0 md:ps-32 ps-20 overflow-hidden">
         <div className="expText">
           <h1 className="font-semibold text-3xl">{expCard.title}</h1>
           <p className="my-5 text-white-50">🗓️&nbsp;{expCard.date}</p>
