@@ -2,6 +2,7 @@ import { useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
+import Badge from "../components/Badge";
 
 // Register ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);
@@ -66,12 +67,8 @@ export default function AppShowcase() {
 
               <div className="space-y-5 mt-5">
                 <div className="flex gap-2 mb-4">
-                  <div className="bg-black-200 py-2 px-4 rounded-full w-fit">
-                    <p>🧠 Design</p>
-                  </div>
-                  <div className="bg-black-200 py-2 px-4 rounded-full w-fit">
-                    <p>🧠 Development</p>
-                  </div>
+                  <Badge text="🧠 Design" />
+                  <Badge text="🧠 Development" />
                 </div>
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold xl:max-w-[40vw]">
                   On-Demand Rides Made Simple with a Powerful, User-Friendly App

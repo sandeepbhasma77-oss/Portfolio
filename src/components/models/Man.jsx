@@ -7,7 +7,6 @@ const Man = () => {
 
   useEffect(() => {
     actions["Vinnie idle"]?.play();
-    console.log(scene);
   }, [scene]);
 
   return (

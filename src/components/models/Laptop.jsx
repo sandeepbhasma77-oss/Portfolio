@@ -20,8 +20,6 @@ export function Laptop(props) {
   const screen = useTexture("/images/project2.png");
 
   useEffect(() => {
-    // console.log(actions);
-
     scene.traverse((child) => {
       if (child.isMesh && child.name === "Object_7") {
         child.material.map = screen;

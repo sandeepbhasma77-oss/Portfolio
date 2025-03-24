@@ -77,6 +77,114 @@ section {
     @apply grid grid-cols-1 xl:grid-cols-12 gap-10;
   }
 
+  .hero-layout {
+    @apply grid grid-cols-1 md:grid-cols-2 gap-6 relative z-10 xl:mt-20 mt-32;
+  }
+
+  .hero-heading {
+    @apply xl:text-6xl text-3xl font-semibold xl:w-[33vw] xl:leading-20;
+  }
+
+  .hero-badge {
+    @apply bg-black-200 py-2 px-4 rounded-full w-fit text-sm md:text-base;
+  }
+
+  .hero-visual {
+    @apply xl:h-[80vh] h-[40vh] md:w-full w-screen;
+  }
+
+  .hero-img {
+    @apply size-5 md:size-10 object-contain;
+  }
+
+  .navbar {
+    @apply fixed w-full left-1/2 -translate-x-1/2 z-[100] transition-all duration-300 ease-in-out;
+
+    &.scrolled {
+      @apply top-0 bg-black py-5 px-5 md:px-10 xl:px-20;
+    }
+
+    &.not-scrolled {
+      @apply top-10 bg-black py-0 px-5 md:px-20 xl:px-40;
+    }
+
+    .inner {
+      @apply mx-auto flex items-center justify-between;
+    }
+
+    .logo {
+      @apply text-white-50 text-xl md:text-2xl font-semibold transition-transform duration-300 hover:scale-105;
+    }
+
+    nav.desktop {
+      @apply hidden md:flex items-center;
+
+      ul {
+        @apply flex space-x-8;
+
+        li {
+          @apply text-white relative;
+
+          span {
+            @apply transition-colors duration-300 hover:text-white-50;
+          }
+
+          .underline {
+            @apply absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full;
+          }
+        }
+      }
+    }
+
+    .contact-btn {
+      @apply hidden md:flex;
+
+      .inner {
+        @apply px-4 py-2 rounded-xl bg-white text-black group-hover:bg-black-50 transition-colors duration-300;
+
+        span {
+          @apply group-hover:text-white transition-colors duration-300;
+        }
+      }
+    }
+
+    .mobile-toggle {
+      @apply md:hidden text-white relative z-50;
+    }
+
+    .mobile-menu {
+      @apply fixed w-80 top-16 right-5 rounded-xl bg-black-50 z-40 flex flex-col pt-24 px-6 md:hidden transition-transform duration-300 ease-in-out;
+
+      &.open {
+        @apply translate-x-0;
+      }
+
+      &.closed {
+        @apply translate-x-[150%];
+      }
+
+      ul {
+        @apply flex flex-col space-y-5 items-end;
+
+        li {
+          @apply text-white text-xl relative;
+
+          span {
+            @apply transition-colors duration-300 hover:text-white-50;
+          }
+
+          .underline {
+            @apply absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full;
+          }
+        }
+
+        .cta {
+          @apply my-5 bg-white text-black px-4 py-2 w-full rounded hover:bg-gray-200;
+        }
+      }
+    }
+  }
+
   .cta-button {
     @apply md:w-72 md:h-16 w-60 h-12 md:rounded-full rounded-xl bg-black-200 flex justify-center items-center relative overflow-hidden;
   }
@@ -205,30 +313,4 @@ section {
     left: -100%;
   }
 }
-
-/* loader animation */
-/* you can copy any loaders you want - https://css-loaders.com/bars/ */
-.loader {
-  width: 45px;
-  aspect-ratio: 1;
-  --c: no-repeat
-    linear-gradient(#fff calc(50% - 10px), #0000 0 calc(50% + 10px), #fff 0);
-  /* change #000 to #fff */
-  background: var(--c) 0% 100%, var(--c) 50% 100%, var(--c) 100% 100%;
-  background-size: 20% calc(200% + 20px);
-  animation: l4 1s infinite linear;
-}
-@keyframes l4 {
-  33% {
-    background-position: 0% 50%, 50% 100%, 100% 100%;
-  }
-  50% {
-    background-position: 0% 0%, 50% 50%, 100% 100%;
-  }
-  66% {
-    background-position: 0% 0%, 50% 0%, 100% 50%;
-  }
-  100% {
-    background-position: 0% 0%, 50% 0%, 100% 0%;
-  }
-}
+/* marquee end */
