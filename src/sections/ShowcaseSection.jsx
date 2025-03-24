@@ -44,7 +44,7 @@ export default function AppShowcase() {
   }, []);
 
   return (
-    <div id="about" ref={sectionRef} className="app-showcase">
+    <div id="work" ref={sectionRef} className="app-showcase">
       <div className="container">
         <div className="grid">
           <div ref={rydeRef} className="left-col">

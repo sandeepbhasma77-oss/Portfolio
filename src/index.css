@@ -123,10 +123,10 @@ section {
         @apply flex space-x-8;
 
         li {
-          @apply text-white relative;
+          @apply text-white-50 relative;
 
           span {
-            @apply transition-colors duration-300 hover:text-white-50;
+            @apply transition-colors duration-300 hover:text-white;
           }
 
           .underline {

@@ -54,7 +54,10 @@ const Experience = () => {
   }, []);
 
   return (
-    <section id="work" className="flex-center mt-20 section-padding xl:px-0">
+    <section
+      id="experience"
+      className="flex-center mt-20 section-padding xl:px-0"
+    >
       <div className="w-full h-full container">
         <TitleHeader
           title="Professional Work Experience"
