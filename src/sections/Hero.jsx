@@ -1,6 +1,7 @@
 import React from "react";
 import HeroExperience from "../components/models/HeroExperience";
 import AnimatedCounter from "../components/AnimatedCounter";
+import Button from "../components/Button";
 
 const Hero = () => {
   return (
@@ -18,7 +19,11 @@ const Hero = () => {
               <h1>
                 Transform
                 <span className="inline-block mx-3 overflow-hidden">
-                  <img src="/images/person.png" alt="person" className="size-5 md:size-10 object-contain" />
+                  <img
+                    src="/images/person.png"
+                    alt="person"
+                    className="size-5 md:size-10 object-contain"
+                  />
                 </span>
                 Ideas into Seamless Digital Experiences
               </h1>
@@ -27,10 +32,7 @@ const Hero = () => {
               Hi, I’m Adrian, a developer based in Croatia with a passion for
               code.
             </p>
-            <div className="w-fit cursor-pointer flex items-center gap-1 bg-white-50 text-black rounded-lg px-6 py-3">
-              <p>See My Work</p>
-              <img src="/images/arrow-right.svg" alt="arrow" />
-            </div>
+            <Button />
           </div>
         </div>
         <div className="xl:h-[80vh] h-[40vh] md:w-full w-screen">
