@@ -54,10 +54,7 @@ const Experience = () => {
   }, []);
 
   return (
-    <section
-      id="work"
-      className="flex-center mt-20 section-padding xl:px-0"
-    >
+    <section id="work" className="flex-center mt-20 section-padding xl:px-0">
       <div className="w-full h-full container">
         <TitleHeader
           title="Professional Work Experience"
@@ -65,15 +62,12 @@ const Experience = () => {
         />
         <div className="mt-32 relative">
           {/* timeline */}
-          <div className="absolute top-0 xl:left-[39%] left-10 h-full flex justify-center">
-            <div className="timeline absolute h-[110%] -top-10 w-20 z-10 bg-black"></div>
-            <div className="gradient-line w-1 h-full"></div>
+          <div className="timeline-wrapper">
+            <div className="timeline" />
+            <div className="gradient-line w-1 h-full" />
             <div className="absolute h-full">
               {expLogos.map((expLogo, index) => (
-                <div
-                  key={index}
-                  className="timeline-logo common-card rounded-full md:size-20 size-10 flex-center md:-translate-y-7"
-                >
+                <div key={index} className="timeline-logo">
                   <img src={expLogo.imgPath} alt="logo" />
                 </div>
               ))}
@@ -81,12 +75,9 @@ const Experience = () => {
           </div>
           <div className="relative z-50">
             {expCards.map((expCard, index) => (
-              <div
-                key={index}
-                className="flex xl:flex-row flex-col-reverse justify-between items-start mb-40 "
-              >
-                <div className="xl:w-[25vw] xl:translate-y-0 translate-y-10 break-inside-avoid-column exp-card relative overflow-hidden">
-                  <div className="absolute top-0 left-0 w-full h-full bg-black curtain-card"></div>
+              <div key={index} className="exp-card-wrapper">
+                <div className="exp-card">
+                  <div className="absolute top-0 left-0 w-full h-full bg-black curtain-card" />
                   <div className="common-card rounded-xl md:p-10 p-5 mb-5">
                     <div className="flex items-center">
                       {Array.from({ length: 5 }, (_, i) => (
@@ -106,12 +97,12 @@ const Experience = () => {
                     </div>
                   </div>
                 </div>
-                <div className="xl:w-[45vw] xl:px-0 md:ps-32 ps-20 overflow-hidden">
+                <div className="exp-content-wrapper">
                   <div className="expText">
                     <h1 className="font-semibold text-3xl">{expCard.title}</h1>
                     <p className="my-5 text-white-50">🗓️&nbsp;{expCard.date}</p>
                     <p className="text-[#839CB5] italic">Responsibilities</p>
-                    <ul className="list-disc ms-5 mt-5 flex flex-col gap-5 text-white-50">
+                    <ul>
                       {expCard.responsibilities.map((responsibility, index) => (
                         <li key={index} className="text-lg">
                           {responsibility}
