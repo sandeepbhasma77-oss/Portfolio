@@ -1,10 +1,8 @@
+import Badge from "../components/Badge";
 import { useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
-import Badge from "../components/Badge";
-
-// Register ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);
 
 export default function AppShowcase() {
@@ -39,7 +37,6 @@ export default function AppShowcase() {
           scrollTrigger: {
             trigger: card,
             start: "top bottom-=100",
-            // markers: true,
           },
         }
       );
@@ -47,61 +44,37 @@ export default function AppShowcase() {
   }, []);
 
   return (
-    <div
-      id="about"
-      ref={sectionRef}
-      className="w-full mt-responsive flex-center"
-    >
-      <div className="padding-x-lg mx-auto">
-        <div className="grid-12-cols">
-          {/* Ryde App Showcase - Takes full width on mobile, half width on desktop */}
-          <div ref={rydeRef} className="lg:col-span-7">
-            <div className="h-full flex flex-col justify-between">
-              <div className="h-[80%]">
-                <img
-                  src="/images/project1.png"
-                  alt="Ryde App Interface"
-                  className="w-full h-full object-cover rounded-xl"
-                />
+    <div id="about" ref={sectionRef} className="app-showcase">
+      <div className="container">
+        <div className="grid">
+          <div ref={rydeRef} className="left-col">
+            <div className="image-wrapper">
+              <img src="/images/project1.png" alt="Ryde App Interface" />
+            </div>
+            <div className="text-content">
+              <div className="badges">
+                <Badge text="🧠 Design" />
+                <Badge text="🧠 Development" />
               </div>
-
-              <div className="space-y-5 mt-5">
-                <div className="flex gap-2 mb-4">
-                  <Badge text="🧠 Design" />
-                  <Badge text="🧠 Development" />
-                </div>
-                <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold xl:max-w-[40vw]">
-                  On-Demand Rides Made Simple with a Powerful, User-Friendly App
-                  called Ryde
-                </h2>
-              </div>
+              <h2>
+                On-Demand Rides Made Simple with a Powerful, User-Friendly App
+                called Ryde
+              </h2>
             </div>
           </div>
 
-          {/* Right column for Library and YC Directory - Stacked on mobile, column on desktop */}
-          <div className="xl:col-span-5 flex md:flex-row flex-col xl:flex-col gap-5">
-            {/* Library Management Platform */}
-            <div ref={libraryRef}>
+          <div className="right-col">
+            <div className="project" ref={libraryRef}>
               <img
                 src="/images/project2.png"
                 alt="Library Management Platform"
-                className="w-full object-cover"
               />
-              <h2 className="text-xl md:text-2xl font-bold mt-5">
-                The Library Management Platform
-              </h2>
+              <h2>The Library Management Platform</h2>
             </div>
 
-            {/* YC Directory */}
-            <div ref={ycDirectoryRef}>
-              <img
-                src="/images/project3.png"
-                alt="YC Directory App"
-                className="w-full object-cover"
-              />
-              <h2 className="text-xl md:text-2xl font-bold mt-5">
-                YC Directory - A Startup Showcase App
-              </h2>
+            <div className="project" ref={ycDirectoryRef}>
+              <img src="/images/project3.png" alt="YC Directory App" />
+              <h2>YC Directory - A Startup Showcase App</h2>
             </div>
           </div>
         </div>
