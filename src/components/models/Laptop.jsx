@@ -9,17 +9,25 @@ Title: Macbook Pro 13 inch 2020
 */
 
 import React, { useEffect } from "react";
-import { useGLTF, useAnimations } from "@react-three/drei";
+import { useGLTF, useAnimations, useTexture } from "@react-three/drei";
 
 export function Laptop(props) {
   const group = React.useRef();
-  const { nodes, materials, animations } = useGLTF(
+  const { nodes, materials, animations, scene } = useGLTF(
     "/models/laptop-transformed.glb"
   );
   const { actions } = useAnimations(animations, group);
+  const screen = useTexture("/images/project2.png");
 
   useEffect(() => {
     // console.log(actions);
+
+    scene.traverse((child) => {
+      if (child.isMesh && child.name === "Object_7") {
+        child.material.map = screen;
+      }
+    });
+
     actions["Animation"]?.play();
   }, [actions]);
 
