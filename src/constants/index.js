@@ -1,3 +1,22 @@
+const navLinks = [
+  {
+    name: "Home",
+    link: "#",
+  },
+  {
+    name: "About",
+    link: "#about",
+  },
+  {
+    name: "Work",
+    link: "#work",
+  },
+  {
+    name: "Testimonials",
+    link: "#testimonials",
+  },
+];
+
 const counterItems = [
   { value: 15, suffix: "+", label: "Years of Experience" },
   { value: 200, suffix: "+", label: "Satisfied Clients" },
@@ -211,4 +230,5 @@ export {
   testimonials,
   socialImgs,
   techStackIcons,
+  navLinks,
 };

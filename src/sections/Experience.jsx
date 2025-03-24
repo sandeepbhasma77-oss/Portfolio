@@ -56,7 +56,7 @@ const Experience = () => {
 
   return (
     <section
-      id="experience"
+      id="work"
       className="flex-center mt-20 py-10 md:py-20 xl:px-0 md:px-10 px-5"
     >
       <div className="w-full h-full container">

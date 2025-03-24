@@ -46,10 +46,9 @@ section {
 
 .gradient-line {
   width: 2px;
-  /* height: 50dvh; */
   background: linear-gradient(
     0deg,
-    #45dec4 0%,
+    rgba(69, 222, 196, 0) 0%,
     #62e0ff 25%,
     #52aeff 37.51%,
     #fd5c79 62.83%,
@@ -97,5 +96,32 @@ section {
   }
   100% {
     left: -100%;
+  }
+}
+
+/* loader animation */
+/* you can copy any loaders you want - https://css-loaders.com/bars/ */
+.loader {
+  width: 45px;
+  aspect-ratio: 1;
+  --c: no-repeat
+    linear-gradient(#fff calc(50% - 10px), #0000 0 calc(50% + 10px), #fff 0);
+  /* change #000 to #fff */
+  background: var(--c) 0% 100%, var(--c) 50% 100%, var(--c) 100% 100%;
+  background-size: 20% calc(200% + 20px);
+  animation: l4 1s infinite linear;
+}
+@keyframes l4 {
+  33% {
+    background-position: 0% 50%, 50% 100%, 100% 100%;
+  }
+  50% {
+    background-position: 0% 0%, 50% 50%, 100% 100%;
+  }
+  66% {
+    background-position: 0% 0%, 50% 0%, 100% 50%;
+  }
+  100% {
+    background-position: 0% 0%, 50% 0%, 100% 0%;
   }
 }
