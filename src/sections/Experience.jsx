@@ -55,7 +55,10 @@ const Experience = () => {
   }, []);
 
   return (
-    <section id="experience" className="flex-center mt-20 py-10 md:py-20">
+    <section
+      id="experience"
+      className="flex-center mt-20 py-10 md:py-20 xl:px-0 md:px-10 px-5"
+    >
       <div className="w-full h-full container">
         <TitleHeader
           title="Professional Work Experience"
@@ -63,14 +66,14 @@ const Experience = () => {
         />
         <div className="mt-32 relative">
           {/* timeline */}
-          <div className="absolute top-0 left-[39%] h-full flex justify-center">
+          <div className="absolute top-0 md:left-[39%] left-10 h-full flex justify-center">
             <div className="timeline absolute h-[110%] -top-10 w-20 z-10 bg-black"></div>
             <div className="gradient-line w-1 h-full"></div>
             <div className="absolute h-full">
               {expLogos.map((expLogo, index) => (
                 <div
                   key={index}
-                  className="mb-[43vh] nth-of-type-[2]:mb-[40vh] common-card rounded-full size-20 flex-center -translate-y-7"
+                  className="md:mb-[43vh] md:nth-of-type-[2]:mb-[40vh] mb-[105vh] nth-of-type-[2]:mb-[101vh] common-card rounded-full md:size-20 size-10 flex-center md:-translate-y-7"
                 >
                   <img src={expLogo.imgPath} alt="logo" />
                 </div>
