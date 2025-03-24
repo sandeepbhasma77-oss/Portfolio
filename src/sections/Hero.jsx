@@ -31,10 +31,10 @@ const Hero = () => {
         <img src="/images/bg.png" alt="" />
       </div>
 
-      <div className="hero-layout">
+      <div className="hero-layout ">
         {/* LEFT: Hero Content */}
-        <header className="flex-col-center md:w-full w-screen">
-          <div className="padding-x-lg flex flex-col gap-7">
+        <header className="flex flex-col justify-center md:w-full w-screen md:px-20 px-5">
+          <div className=" flex flex-col gap-7">
             <Badge text="🧠 Crafting Digital Solutions" />
 
             <h1 className="hero-heading">

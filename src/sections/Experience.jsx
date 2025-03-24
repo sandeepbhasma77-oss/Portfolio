@@ -56,9 +56,9 @@ const Experience = () => {
   return (
     <section
       id="experience"
-      className="flex-center mt-20 section-padding xl:px-0"
+      className="flex-center md:mt-40 mt-20 section-padding xl:px-0"
     >
-      <div className="w-full h-full container">
+      <div className="w-full h-full md:px-20 px-5">
         <TitleHeader
           title="Professional Work Experience"
           sub="💼 Driving Impact for Top Brands"
@@ -82,13 +82,13 @@ const Experience = () => {
                 <div className="exp-card">
                   <div className="absolute top-0 left-0 w-full h-full bg-black curtain-card" />
                   <div className="common-card rounded-xl md:p-10 p-5 mb-5">
-                    <div className="flex items-center">
+                    <div className="flex items-center gap-1 mb-5">
                       {Array.from({ length: 5 }, (_, i) => (
                         <img
                           key={i}
-                          src="/images/silver-star.png"
+                          src="/images/star.png"
                           alt="star"
-                          className="size-12 -ms-3"
+                          className="size-5"
                         />
                       ))}
                     </div>

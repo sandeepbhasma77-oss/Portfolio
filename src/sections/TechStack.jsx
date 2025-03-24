@@ -20,7 +20,7 @@ const TechStack = () => {
         ease: "power2.inOut",
         stagger: 0.2,
         scrollTrigger: {
-          trigger: "#techStack", // wrapper
+          trigger: "#skills", // wrapper
           start: "top center",
         },
       }
@@ -28,8 +28,8 @@ const TechStack = () => {
   });
 
   return (
-    <div id="skills" className="flex-center section-padding">
-      <div className="w-full h-full container">
+    <div id="skills" className="flex-center section-padding md:mt-10 mt-20">
+      <div className="w-full h-full md:px-10 px-5">
         <TitleHeader
           title="What I Do & How I Can Help You"
           sub="🤝 Let’s Bring Your Ideas to Life"

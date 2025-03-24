@@ -13,7 +13,7 @@ body {
 
 section {
   width: 100dvw;
-  min-height: 100dvh;
+  /* min-height: 100dvh; */
 }
 
 @theme {
@@ -45,7 +45,7 @@ section {
   }
 
   .section-padding {
-    @apply px-5 md:px-10 py-10 md:py-20;
+    @apply px-5 md:px-10 md:mt-40 mt-20;
   }
 
   .mt-responsive {
@@ -86,7 +86,7 @@ section {
   }
 
   .hero-badge {
-    @apply bg-black-200 py-2 px-4 rounded-full w-fit text-sm md:text-base;
+    @apply bg-black-200 py-2 px-4 rounded-full w-fit text-sm md:text-base text-nowrap;
   }
 
   .hero-visual {
@@ -186,7 +186,7 @@ section {
   }
 
   .app-showcase {
-    @apply w-full mt-40 px-5 md:px-10 py-10 md:py-20 flex items-center justify-center;
+    @apply w-full mt-40 px-5 md:px-20 py-10 md:py-20 flex items-center justify-center;
 
     .container {
       @apply mx-auto;
@@ -331,7 +331,7 @@ section {
   }
 
   .footer {
-    @apply my-10 text-white-50 px-5 md:px-10 xl:px-0 flex items-center justify-center;
+    @apply my-10 md:mt-20 mt-10 text-white-50 px-5 md:px-20 xl:px-0 flex items-center justify-center;
 
     .container {
       @apply grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-0 w-full;

@@ -45,7 +45,7 @@ export default function AppShowcase() {
 
   return (
     <div id="work" ref={sectionRef} className="app-showcase">
-      <div className="container">
+      <div className="w-full">
         <div className="grid">
           <div ref={rydeRef} className="left-col">
             <div className="image-wrapper">
