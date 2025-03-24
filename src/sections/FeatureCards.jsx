@@ -9,7 +9,7 @@ export default function FeatureCards() {
             key={index}
             className="common-card rounded-xl p-8 flex flex-col gap-4"
           >
-            <div className="size-10 flex items-center justify-center rounded-full">
+            <div className="size-14 flex items-center justify-center rounded-full">
               <img src={ability.imgPath} alt={ability.title} />
             </div>
             <h3 className="text-white text-2xl font-semibold mt-2">
