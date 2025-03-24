@@ -72,7 +72,7 @@ const Experience = () => {
                   key={index}
                   className="mb-[43vh] nth-of-type-[2]:mb-[40vh] common-card rounded-full size-20 flex-center -translate-y-7"
                 >
-                  <img src={expLogo.imgPath} alt="logo" className="" />
+                  <img src={expLogo.imgPath} alt="logo" />
                 </div>
               ))}
             </div>

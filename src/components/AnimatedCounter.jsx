@@ -1,40 +1,37 @@
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import gsap from "gsap";
 import { counterItems } from "../constants";
+import { useGSAP } from "@gsap/react";
 
 export default function AnimatedCounter() {
   const counterRef = useRef(null);
   const countersRef = useRef([]);
 
-  useEffect(() => {
-    const ctx = gsap.context(() => {
-      countersRef.current.forEach((counter, index) => {
-        const numberElement = counter.querySelector(".counter-number");
-        const item = counterItems[index];
+  useGSAP(() => {
+    countersRef.current.forEach((counter, index) => {
+      const numberElement = counter.querySelector(".counter-number");
+      const item = counterItems[index];
 
-        // Set initial value to 0
-        gsap.set(numberElement, { innerText: "0" });
+      // Set initial value to 0
+      gsap.set(numberElement, { innerText: "0" });
 
-        // Create the counting animation
-        gsap.to(numberElement, {
-          innerText: item.value,
-          duration: 2.5,
-          ease: "power2.out",
-          snap: { innerText: 1 }, // Ensures whole numbers
-          // Add the suffix after counting is complete
-          onComplete: () => {
-            numberElement.textContent = `${item.value}${item.suffix}`;
-          },
-        });
+      // Create the counting animation
+      gsap.to(numberElement, {
+        innerText: item.value,
+        duration: 2.5,
+        ease: "power2.out",
+        snap: { innerText: 1 }, // Ensures whole numbers
+        // Add the suffix after counting is complete
+        onComplete: () => {
+          numberElement.textContent = `${item.value}${item.suffix}`;
+        },
       });
     }, counterRef);
-
-    return () => ctx.revert(); // Clean up animations on unmount
   }, []);
 
   return (
-    <div ref={counterRef} className="md:px-20 px-5">
-      <div className="mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7">
+    <div ref={counterRef} className="md:px-20 px-5 xl:mt-0 mt-32">
+      <div className="mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-7">
         {counterItems.map((item, index) => (
           <div
             key={index}

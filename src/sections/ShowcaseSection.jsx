@@ -1,6 +1,7 @@
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useGSAP } from "@gsap/react";
 
 // Register ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);
@@ -11,7 +12,7 @@ export default function AppShowcase() {
   const libraryRef = useRef(null);
   const ycDirectoryRef = useRef(null);
 
-  useEffect(() => {
+  useGSAP(() => {
     // Animation for the main section
     gsap.fromTo(
       sectionRef.current,
@@ -37,22 +38,17 @@ export default function AppShowcase() {
           scrollTrigger: {
             trigger: card,
             start: "top bottom-=100",
-            markers: true,
+            // markers: true,
           },
         }
       );
     });
-
-    return () => {
-      // Clean up ScrollTrigger instances
-      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
-    };
   }, []);
 
   return (
-    <section ref={sectionRef} className="w-full mt-20">
+    <div ref={sectionRef} className="w-full xl:mt-20 mt-0 flex-center">
       <div className="md:px-20 px-5 mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
+        <div className="grid grid-cols-1 xl:grid-cols-12 gap-10">
           {/* Ryde App Showcase - Takes full width on mobile, half width on desktop */}
           <div ref={rydeRef} className="lg:col-span-7">
             <div className="h-full flex flex-col justify-between">
@@ -73,7 +69,7 @@ export default function AppShowcase() {
                     <p>🧠 Development</p>
                   </div>
                 </div>
-                <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold lg:max-w-[40vw]">
+                <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold xl:max-w-[40vw]">
                   On-Demand Rides Made Simple with a Powerful, User-Friendly App
                   called Ryde
                 </h2>
@@ -82,7 +78,7 @@ export default function AppShowcase() {
           </div>
 
           {/* Right column for Library and YC Directory - Stacked on mobile, column on desktop */}
-          <div className="lg:col-span-5 space-y-5">
+          <div className="xl:col-span-5 flex md:flex-row flex-col xl:flex-col gap-5">
             {/* Library Management Platform */}
             <div ref={libraryRef}>
               <img
@@ -109,6 +105,6 @@ export default function AppShowcase() {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 }
