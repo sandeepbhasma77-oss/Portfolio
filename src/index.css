@@ -279,6 +279,39 @@ section {
       }
     }
   }
+
+  .footer {
+    @apply my-10 text-white-50 px-5 md:px-10 xl:px-0 flex items-center justify-center;
+
+    .container {
+      @apply grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-0 w-full;
+    }
+
+    .left,
+    .right {
+      @apply flex flex-col justify-center;
+    }
+
+    .left p {
+      @apply text-center md:text-start cursor-pointer;
+    }
+
+    .right p {
+      @apply text-center md:text-end;
+    }
+
+    .socials {
+      @apply flex items-center justify-center gap-5;
+
+      .icon {
+        @apply border border-black-50 bg-black-100 flex justify-center items-center rounded-xl size-10 md:size-12 cursor-pointer transition-all duration-500 hover:bg-black-50;
+      }
+
+      img {
+        @apply inline-block;
+      }
+    }
+  }
 }
 
 .gradient-line {
