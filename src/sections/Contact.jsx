@@ -42,10 +42,6 @@ const Contact = () => {
                   />
                 </div>
 
-                <button type="submit">
-                  Send Message
-                  <img src="/images/arrow-right.svg" alt="arrow-right" />
-                </button>
                 <Button text="Send Message" />
               </form>
             </div>
