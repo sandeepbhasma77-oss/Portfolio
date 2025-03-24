@@ -16,13 +16,13 @@ const Testimonials = () => {
               key={index}
               className="common-card rounded-xl p-10 mb-5 break-inside-avoid-column"
             >
-              <div className="flex items-center">
+              <div className="flex items-center gap-1 mb-5">
                 {Array.from({ length: 5 }, (_, i) => (
                   <img
                     key={i}
-                    src="/images/silver-star.png"
+                    src="/images/star.png"
                     alt="star"
-                    className="size-12 -ms-3"
+                    className="size-5"
                   />
                 ))}
               </div>
