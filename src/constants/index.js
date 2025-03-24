@@ -1,19 +1,43 @@
-const countData = [
+const counterItems = [
+  { value: 15, suffix: "+", label: "Years of Experience" },
+  { value: 200, suffix: "+", label: "Satisfied Clients" },
+  { value: 108, suffix: "+", label: "Completed Projects" },
+  { value: 90, suffix: "%", label: "Client Retention Rate" },
+];
+
+const logoIconsList = [
   {
-    number: 15,
-    text: "Years of Experience",
+    imgPath: "/images/logos/company-logo-1.png",
   },
   {
-    number: 200,
-    text: "Satisfied Clients",
+    imgPath: "/images/logos/company-logo-2.png",
   },
   {
-    number: 108,
-    text: "Completed Projects",
+    imgPath: "/images/logos/company-logo-3.png",
   },
   {
-    number: 90,
-    text: "Client Retention Rate",
+    imgPath: "/images/logos/company-logo-4.png",
+  },
+  {
+    imgPath: "/images/logos/company-logo-5.png",
+  },
+  {
+    imgPath: "/images/logos/company-logo-6.png",
+  },
+  {
+    imgPath: "/images/logos/company-logo-7.png",
+  },
+  {
+    imgPath: "/images/logos/company-logo-8.png",
+  },
+  {
+    imgPath: "/images/logos/company-logo-9.png",
+  },
+  {
+    imgPath: "/images/logos/company-logo-10.png",
+  },
+  {
+    imgPath: "/images/logos/company-logo-11.png",
   },
 ];
 
@@ -38,23 +62,28 @@ const abilities = [
 const techStackIcons = [
   {
     name: "React Developer",
-    imgPath: "/images/react.png",
+    modelPath: "/models/react.glb",
+    color: "blue",
   },
   {
-    name: "Mobile App Developer",
-    imgPath: "/images/react.png",
+    name: "AWS Developer",
+    modelPath: "/models/aws.glb",
+    color: "orange",
   },
   {
-    name: "Backend Developer",
-    imgPath: "/images/react.png",
+    name: "Javascript Developer",
+    modelPath: "/models/javascript.glb",
+    color: "green",
   },
   {
-    name: " Interactive Developer",
-    imgPath: "/images/react.png",
+    name: "Interactive Developer",
+    modelPath: "/models/python.glb",
+    color: "yellow",
   },
   {
     name: "Project Manager",
-    imgPath: "/images/react.png",
+    modelPath: "/models/git-svg.glb",
+    color: "red",
   },
 ];
 
@@ -175,7 +204,8 @@ const socialImgs = [
 
 export {
   abilities,
-  countData,
+  logoIconsList,
+  counterItems,
   expCards,
   expLogos,
   testimonials,

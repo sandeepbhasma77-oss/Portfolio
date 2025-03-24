@@ -1,7 +1,6 @@
-import { Box, Environment } from "@react-three/drei";
-import { Canvas } from "@react-three/fiber";
 import React from "react";
-import { Laptop } from "../components/models/Laptop";
+import HeroExperience from "../components/models/HeroExperience";
+import AnimatedCounter from "../components/AnimatedCounter";
 
 const Hero = () => {
   return (
@@ -11,7 +10,7 @@ const Hero = () => {
       </div>
       <div className="grid md:grid-cols-2 relative z-10">
         <div className="flex-col-center">
-          <div className="px-20 flex flex-col gap-7">
+          <div className="md:px-20 px-5 flex flex-col gap-7">
             <div className="bg-black-200 py-2 px-4 rounded-full w-fit">
               <p>🧠 Crafting Digital Solutions</p>
             </div>
@@ -34,16 +33,12 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="h-dvh">
-          <Canvas camera={{ position: [0.7, 5, 5] }}>
-            <ambientLight />
-            <Environment preset="city" />
-            <group scale={20} position={[0, -2, 0]}>
-              <Laptop />
-            </group>
-          </Canvas>
+        <div className="h-[80vh]">
+          <HeroExperience />
         </div>
       </div>
+      {/* counter section */}
+      <AnimatedCounter />
     </section>
   );
 };
