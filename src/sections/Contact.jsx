@@ -1,7 +1,7 @@
 import React from "react";
 import TitleHeader from "../components/TitleHeader";
-import ContactForm from "../components/ContactForm";
 import ContactExperience from "../components/models/ContactExperience";
+import Button from "../components/Button";
 
 const Contact = () => {
   return (
@@ -13,7 +13,42 @@ const Contact = () => {
         />
         <div className="grid grid-cols-1 md:grid-cols-12 mt-16">
           <div className="md:col-span-5 col-span-12">
-            <ContactForm />
+            <div className="flex-center common-card rounded-xl p-10">
+              <form className="w-full flex flex-col gap-7">
+                <div>
+                  <label htmlFor="name">Your name</label>
+                  <input
+                    type="text"
+                    id="name"
+                    placeholder="What’s your good name?"
+                  />
+                </div>
+
+                <div>
+                  <label htmlFor="email">Your Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    placeholder="What’s your email address?"
+                  />
+                </div>
+
+                <div>
+                  <label htmlFor="message">Your Message</label>
+                  <textarea
+                    id="message"
+                    placeholder="How can I help you?"
+                    rows="5"
+                  />
+                </div>
+
+                <button type="submit">
+                  Send Message
+                  <img src="/images/arrow-right.svg" alt="arrow-right" />
+                </button>
+                <Button text="Send Message" />
+              </form>
+            </div>
           </div>
           <div className="md:col-span-7 col-span-12">
             <div className="w-full h-full">

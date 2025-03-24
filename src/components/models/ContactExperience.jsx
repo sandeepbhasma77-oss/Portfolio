@@ -2,7 +2,6 @@ import { Environment, OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import React from "react";
 import Man from "./Man";
-import { Laptop } from "./Laptop";
 
 const ContactExperience = () => {
   return (

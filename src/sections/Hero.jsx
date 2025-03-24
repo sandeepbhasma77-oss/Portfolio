@@ -53,14 +53,13 @@ const Hero = () => {
               Hi, I’m Adrian, a developer based in Croatia with a passion for
               code.
             </p>
-            <Button />
+            <Button text={"See My Work"} />
           </div>
         </div>
         <div className="xl:h-[80vh] h-[40vh] md:w-full w-screen">
           <HeroExperience />
         </div>
       </div>
-      {/* counter section */}
       <AnimatedCounter />
     </section>
   );
