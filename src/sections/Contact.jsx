@@ -11,8 +11,8 @@ const Contact = () => {
           title="Get in Touch – Let’s Connect"
           sub="💬 Have questions or ideas? Let’s talk! 🚀"
         />
-        <div className="grid-12-cols mt-16">
-          <div className="md:col-span-5 col-span-12">
+        <div className="grid grid-cols-1 xl:grid-cols-12 gap-10 mt-16">
+          <div className="xl:col-span-5">
             <div className="flex-center common-card rounded-xl p-10">
               <form className="w-full flex flex-col gap-7">
                 <div>
@@ -46,7 +46,7 @@ const Contact = () => {
               </form>
             </div>
           </div>
-          <div className="md:col-span-7 col-span-12">
+          <div className="xl:col-span-7">
             <div className="w-full h-full">
               <ContactExperience />
             </div>
