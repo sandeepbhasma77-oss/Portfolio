@@ -66,7 +66,7 @@ const Experience = () => {
             {expCards.map((expCard, index) => (
               <div
                 key={index}
-                className="flex flex-col-reverse xl:flex-row xl:gap-20 gap-10 justify-between "
+                className="exp-card-wrapper"
               >
                 <div className="xl:w-2/6">
                   <div className="common-card timeline-card relative z-30 rounded-xl md:p-10 p-5 mb-5">
