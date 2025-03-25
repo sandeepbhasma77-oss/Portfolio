@@ -264,31 +264,15 @@ section {
   }
 
   .timeline-wrapper {
-    @apply absolute top-0 xl:left-[39%] left-10 h-full flex justify-center;
+    @apply absolute top-0 xl:left-[39%] md:left-10 left-5 h-full flex justify-center;
   }
 
   .timeline {
-    @apply absolute h-[110%] -top-10 w-20 z-10 bg-black;
+    @apply absolute h-[110%] -top-10 w-20 z-20 bg-black;
   }
 
   .timeline-logo {
-    @apply xl:mb-[43vh] xl:nth-of-type-[2]:mb-[40vh] md:mb-[57vh] md:nth-of-type-[2]:mb-[57vh] lg:mb-[45vh] lg:nth-of-type-[2]:mb-[45vh] mb-[105vh] nth-of-type-[2]:mb-[101vh] rounded-full md:size-20 size-10 flex justify-center items-center md:-translate-y-7 border border-black-50 bg-black-100;
-  }
-
-  .exp-card-wrapper {
-    @apply flex xl:flex-row flex-col-reverse justify-between items-start mb-40;
-  }
-
-  .exp-card {
-    @apply xl:w-[25vw] xl:translate-y-0 translate-y-10 break-inside-avoid-column relative overflow-hidden;
-  }
-
-  .exp-content-wrapper {
-    @apply xl:w-[45vw] xl:px-0 md:ps-32 ps-20 overflow-hidden;
-
-    & ul {
-      @apply list-disc ms-5 mt-5 flex flex-col gap-5 text-white-50;
-    }
+    @apply md:size-20 size-10 flex-none rounded-full flex justify-center items-center md:-translate-y-7 border border-black-50 bg-black-100;
   }
 
   .gradient-edge {
@@ -421,5 +405,3 @@ section {
   }
 }
 /* marquee end */
-
- 
