@@ -78,19 +78,15 @@ section {
   }
 
   .hero-layout {
-    @apply grid grid-cols-1 md:grid-cols-5 gap-6 relative z-10 xl:mt-20 mt-32;
+    @apply relative z-10 xl:mt-20 mt-32 min-h-[80vh] flex flex-col xl:justify-center;
   }
 
   .hero-heading {
-    @apply xl:text-6xl text-3xl font-semibold xl:w-[33vw] xl:leading-20;
+    @apply xl:text-6xl text-3xl font-semibold xl:w-[45vw] xl:leading-20;
   }
 
   .hero-badge {
     @apply bg-black-200 py-2 px-4 rounded-full w-fit text-sm md:text-base text-nowrap;
-  }
-
-  .hero-visual {
-    @apply xl:h-[80vh] h-[40vh] md:w-full w-screen;
   }
 
   .hero-img {

@@ -9,12 +9,8 @@ const TechIconCardExperience = ({ model }) => {
       <ambientLight />
       <directionalLight position={[3, 3, 10]} intensity={5} />
       <Environment preset="apartment" />
-      <group scale={0.05}
-          rotation={[0, -Math.PI / 2, 0]}>
-        <primitive
-          object={scene.scene}
-          
-        />
+      <group scale={0.05} rotation={[0, -Math.PI / 2, 0]}>
+        <primitive object={scene.scene} />
       </group>
       <OrbitControls enableZoom={false} autoRotate />
     </Canvas>

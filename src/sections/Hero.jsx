@@ -33,7 +33,7 @@ const Hero = () => {
 
       <div className="hero-layout">
         {/* LEFT: Hero Content */}
-        <header className="col-span-3 flex flex-col justify-center md:w-full w-screen md:px-20 px-5">
+        <header className="flex flex-col justify-center md:w-full w-screen md:px-20 px-5">
           <div className="flex flex-col gap-7">
             <Badge text="🧠 Crafting Digital Solutions" />
 
@@ -57,8 +57,10 @@ const Hero = () => {
         </header>
 
         {/* RIGHT: 3D Model or Visual */}
-        <figure className="hero-visual col-span-2">
-          <HeroExperience />
+        <figure>
+          <div className="absolute xl:left-96 left-0 xl:top-0  w-full h-full">
+            <HeroExperience />
+          </div>
         </figure>
       </div>
 
