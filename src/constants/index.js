@@ -1,9 +1,3 @@
-import { GitLogo } from "../components/models/GitLogo";
-import { NodeLogo } from "../components/models/NodeLogo";
-import { PythonLogo } from "../components/models/PythonLogo";
-import { ReactLogo } from "../components/models/ReactLogo";
-import { ThreejsLogo } from "../components/models/ThreejsLogo";
-
 const navLinks = [
   {
     name: "Work",
@@ -22,6 +16,8 @@ const navLinks = [
     link: "#testimonials",
   },
 ];
+
+const words = ["Ideas", "Concepts", "Designs", "Code"];
 
 const counterItems = [
   { value: 15, suffix: "+", label: "Years of Experience" },
@@ -83,29 +79,6 @@ const abilities = [
     desc: "Ensuring projects are delivered on time without compromising quality & precision.",
   },
 ];
-
-// const techStackIcons = [
-//   {
-//     name: "React Developer",
-//     component: ReactLogo,
-//   },
-//   {
-//     name: "Python Developer",
-//     component: PythonLogo,
-//   },
-//   {
-//     name: "Backend Developer",
-//     component: NodeLogo,
-//   },
-//   {
-//     name: "Interactive Developer",
-//     component: ThreejsLogo,
-//   },
-//   {
-//     name: "Project Manager",
-//     component: GitLogo,
-//   },
-// ];
 
 const techStackIcons = [
   {
@@ -259,6 +232,7 @@ const socialImgs = [
 ];
 
 export {
+  words,
   abilities,
   logoIconsList,
   counterItems,
