@@ -1,8 +1,8 @@
 import React from "react";
 
-const Button = ({ text }) => {
+const Button = ({ text, className }) => {
   return (
-    <div className="w-fit cursor-pointer">
+    <div className={`${className} cursor-pointer`}>
       <div className="cta-button group">
         <div className="bg-circle" />
         <p className="text">{text}</p>

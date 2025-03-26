@@ -239,7 +239,7 @@ section {
   }
 
   .cta-button {
-    @apply md:w-80 md:h-16 w-60 h-12 rounded-xl bg-black-200 flex justify-center items-center relative overflow-hidden;
+    @apply px-4 py-4 rounded-lg bg-black-200 flex justify-center items-center relative overflow-hidden;
   }
 
   .cta-button .bg-circle {

@@ -47,7 +47,7 @@ const Contact = () => {
             </div>
           </div>
           <div className="xl:col-span-7">
-            <div className="w-full h-full">
+            <div className="w-full h-full hover:cursor-grab">
               <ContactExperience />
             </div>
           </div>
