@@ -84,26 +84,49 @@ const abilities = [
   },
 ];
 
+// const techStackIcons = [
+//   {
+//     name: "React Developer",
+//     component: ReactLogo,
+//   },
+//   {
+//     name: "Python Developer",
+//     component: PythonLogo,
+//   },
+//   {
+//     name: "Backend Developer",
+//     component: NodeLogo,
+//   },
+//   {
+//     name: "Interactive Developer",
+//     component: ThreejsLogo,
+//   },
+//   {
+//     name: "Project Manager",
+//     component: GitLogo,
+//   },
+// ];
+
 const techStackIcons = [
   {
     name: "React Developer",
-    component: ReactLogo,
+    component: "/models/react-transformed.glb",
   },
   {
     name: "Python Developer",
-    component: PythonLogo,
+    component: "/models/python-transformed.glb",
   },
   {
     name: "Backend Developer",
-    component: NodeLogo,
+    component: "/models/node-transformed.glb",
   },
   {
     name: "Interactive Developer",
-    component: ThreejsLogo,
+    component: "/models/threejs-transformed.glb",
   },
   {
     name: "Project Manager",
-    component: GitLogo,
+    component: "/models/git-svg-transformed.glb",
   },
 ];
 

@@ -6,26 +6,26 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
 const TechStack = () => {
-  useGSAP(() => {
-    gsap.fromTo(
-      ".tech-card",
-      {
-        y: 50,
-        opacity: 0,
-      },
-      {
-        y: 0,
-        opacity: 1,
-        duration: 1,
-        ease: "power2.inOut",
-        stagger: 0.2,
-        scrollTrigger: {
-          trigger: "#skills", // wrapper
-          start: "top center",
-        },
-      }
-    );
-  });
+  // useGSAP(() => {
+  //   gsap.fromTo(
+  //     ".tech-card",
+  //     {
+  //       y: 50,
+  //       opacity: 0,
+  //     },
+  //     {
+  //       y: 0,
+  //       opacity: 1,
+  //       duration: 1,
+  //       ease: "power2.inOut",
+  //       stagger: 0.2,
+  //       scrollTrigger: {
+  //         trigger: "#skills", // wrapper
+  //         start: "top center",
+  //       },
+  //     }
+  //   );
+  // });
 
   return (
     <div id="skills" className="flex-center section-padding">

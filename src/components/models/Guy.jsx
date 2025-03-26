@@ -21,7 +21,6 @@ export function Guy(props) {
   const { actions } = useAnimations(animations, group);
 
   useEffect(() => {
-    console.log(actions);
     actions["mixamo.com"]?.play();
   }, [actions]);
 
