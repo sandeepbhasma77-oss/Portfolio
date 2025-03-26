@@ -38,7 +38,7 @@ const TechStack = () => {
           {techStackIcons.map((techStackIcon, index) => (
             <div
               key={index}
-              className="common-card tech-card xl:rounded-full rounded-lg"
+              className="card-border tech-card xl:rounded-full rounded-lg"
             >
               <div className="tech-card-content">
                 <div className="tech-icon-wrapper">

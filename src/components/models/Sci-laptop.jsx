@@ -25,7 +25,6 @@ export function SciFiLaptop(props) {
 
   useFrame(() => {
     if (groupRef.current) {
-      console.log(groupRef.current);
       // Smoothly interpolate rotation based on mouse movement
       groupRef.current.rotation.x = THREE.MathUtils.lerp(
         groupRef.current.rotation.x,

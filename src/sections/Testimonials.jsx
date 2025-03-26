@@ -14,7 +14,7 @@ const Testimonials = () => {
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="common-card rounded-xl p-10 mb-5 break-inside-avoid-column"
+              className="card-border rounded-xl p-10 mb-5 break-inside-avoid-column"
             >
               <div className="flex items-center gap-1 mb-5">
                 {Array.from({ length: 5 }, (_, i) => (

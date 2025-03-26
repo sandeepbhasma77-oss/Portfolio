@@ -64,12 +64,9 @@ const Experience = () => {
         <div className="mt-32 relative">
           <div className="relative z-50 xl:space-y-32 space-y-10">
             {expCards.map((expCard, index) => (
-              <div
-                key={index}
-                className="exp-card-wrapper"
-              >
+              <div key={index} className="exp-card-wrapper">
                 <div className="xl:w-2/6">
-                  <div className="common-card timeline-card relative z-30 rounded-xl md:p-10 p-5 mb-5">
+                  <div className="card-border timeline-card relative z-30 rounded-xl md:p-10 p-5 mb-5">
                     <div className="flex items-center gap-1 mb-5">
                       {Array.from({ length: 5 }, (_, i) => (
                         <img

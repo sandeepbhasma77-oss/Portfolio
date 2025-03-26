@@ -7,7 +7,7 @@ export default function FeatureCards() {
         {abilities.map((ability, index) => (
           <div
             key={index}
-            className="common-card rounded-xl p-8 flex flex-col gap-4"
+            className="card-border rounded-xl p-8 flex flex-col gap-4"
           >
             <div className="size-14 flex items-center justify-center rounded-full">
               <img src={ability.imgPath} alt={ability.title} />
