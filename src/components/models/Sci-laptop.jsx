@@ -41,6 +41,8 @@ export function SciFiLaptop(props) {
 
   return (
     <group ref={groupRef} {...props} dispose={null}>
+      {/* doc for r3f postprocessing selective bloom */}
+      {/* https://react-postprocessing.docs.pmnd.rs/effects/selective-bloom */}
       <EffectComposer>
         <SelectiveBloom
           selection={[meshRef]} // selection of objects that will have bloom effectintensity={1.5}
