@@ -78,7 +78,7 @@ section {
   }
 
   .hero-layout {
-    @apply grid grid-cols-1 md:grid-cols-2 gap-6 relative z-10 xl:mt-20 mt-32;
+    @apply grid grid-cols-1 md:grid-cols-5 gap-6 relative z-10 xl:mt-20 mt-32;
   }
 
   .hero-heading {
@@ -196,7 +196,7 @@ section {
       @apply grid grid-cols-1 xl:grid-cols-12 gap-10;
     }
 
-    .left-col {
+    .first-project-wrapper {
       @apply lg:col-span-7 h-full flex flex-col justify-between;
 
       .image-wrapper {
@@ -220,7 +220,7 @@ section {
       }
     }
 
-    .right-col {
+    .project-list-wrapper {
       @apply xl:col-span-5 flex md:flex-row flex-col xl:flex-col gap-5;
 
       .project {
@@ -284,7 +284,7 @@ section {
   }
 
   .tech-card-content {
-    @apply flex flex-col md:justify-center items-center xl:gap-5 xl:h-[50vh];
+    @apply flex flex-col md:justify-center items-center xl:gap-5 xl:h-[50vh] overflow-hidden;
 
     & p {
       @apply text-lg md:text-2xl font-semibold text-white-50 md:text-center;
@@ -296,7 +296,7 @@ section {
   }
 
   .tech-icon-wrapper {
-    @apply flex justify-center items-center h-60 relative;
+    @apply flex justify-center items-center w-52 h-60 relative;
   }
 
   form {
@@ -325,17 +325,8 @@ section {
       @apply grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-0 w-full;
     }
 
-    .left,
-    .right {
-      @apply flex flex-col justify-center;
-    }
-
-    .left p {
+    p {
       @apply text-center md:text-start cursor-pointer;
-    }
-
-    .right p {
-      @apply text-center md:text-end;
     }
 
     .socials {

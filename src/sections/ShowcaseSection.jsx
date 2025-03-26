@@ -47,7 +47,7 @@ export default function AppShowcase() {
     <div id="work" ref={sectionRef} className="app-showcase">
       <div className="w-full">
         <div className="grid">
-          <div ref={rydeRef} className="left-col">
+          <div ref={rydeRef} className="first-project-wrapper">
             <div className="image-wrapper">
               <img src="/images/project1.png" alt="Ryde App Interface" />
             </div>
@@ -63,7 +63,7 @@ export default function AppShowcase() {
             </div>
           </div>
 
-          <div className="right-col">
+          <div className="project-list-wrapper">
             <div className="project" ref={libraryRef}>
               <img
                 src="/images/project2.png"
