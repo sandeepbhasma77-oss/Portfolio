@@ -1,6 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap");
 @import "tailwindcss";
 
+:root {
+  --gradient: radial-gradient(
+    circle,
+    hsla(175, 79%, 63%, 1) 0%,
+    hsla(82, 96%, 57%, 1) 100%
+  );
+}
+
 html,
 body {
   width: 100dvw;
@@ -13,7 +21,6 @@ body {
 
 section {
   width: 100dvw;
-  /* min-height: 100dvh; */
 }
 
 @theme {
@@ -396,3 +403,51 @@ section {
   }
 }
 /* marquee end */
+
+.card {
+  --start: 0;
+  position: relative;
+  overflow: hidden;
+  transition: border-color 1s ease-in-out;
+}
+
+.card::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 12px;
+  border: 2px solid transparent;
+  background: var(--gradient);
+  background-attachment: fixed;
+  mask: linear-gradient(#0000, #0000),
+    conic-gradient(
+      from calc((var(--start) - 15) * 1deg),
+      #ffffff1f 0deg,
+      white,
+      #ffffff00 100deg
+    );
+  mask-composite: intersect;
+  mask-clip: padding-box, border-box;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.glow {
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  filter: blur(10px);
+  filter: saturate(200);
+}
+
+.card:hover::before {
+  opacity: 1;
+}
