@@ -108,7 +108,7 @@ section {
     }
 
     &.not-scrolled {
-      @apply top-10 bg-black py-0 px-5 md:px-20 xl:px-40;
+      @apply top-10 bg-transparent py-0 px-5 md:px-20 xl:px-60 2xl:px-96;
     }
 
     .inner {
