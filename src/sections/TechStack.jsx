@@ -6,26 +6,26 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
 const TechStack = () => {
-  // useGSAP(() => {
-  //   gsap.fromTo(
-  //     ".tech-card",
-  //     {
-  //       y: 50,
-  //       opacity: 0,
-  //     },
-  //     {
-  //       y: 0,
-  //       opacity: 1,
-  //       duration: 1,
-  //       ease: "power2.inOut",
-  //       stagger: 0.2,
-  //       scrollTrigger: {
-  //         trigger: "#skills", // wrapper
-  //         start: "top center",
-  //       },
-  //     }
-  //   );
-  // });
+  useGSAP(() => {
+    gsap.fromTo(
+      ".tech-card",
+      {
+        y: 50,
+        opacity: 0,
+      },
+      {
+        y: 0,
+        opacity: 1,
+        duration: 1,
+        ease: "power2.inOut",
+        stagger: 0.2,
+        scrollTrigger: {
+          trigger: "#skills", // wrapper
+          start: "top center",
+        },
+      }
+    );
+  });
 
   return (
     <div id="skills" className="flex-center section-padding">
@@ -38,8 +38,9 @@ const TechStack = () => {
           {techStackIcons.map((techStackIcon, index) => (
             <div
               key={index}
-              className="card-border tech-card xl:rounded-full rounded-lg"
+              className="card-border tech-card overflow-hidden group xl:rounded-full rounded-lg"
             >
+              <div className="tech-card-animated-bg" />
               <div className="tech-card-content">
                 <div className="tech-icon-wrapper">
                   <TechIconCardExperience model={techStackIcon.component} />

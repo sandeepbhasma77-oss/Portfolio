@@ -110,23 +110,33 @@ const abilities = [
 const techStackIcons = [
   {
     name: "React Developer",
-    component: "/models/react-transformed.glb",
+    modelPath: "/models/react_logo-transformed.glb",
+    scale: 1,
+    rotation: [0, 0, 0],
   },
   {
     name: "Python Developer",
-    component: "/models/python-transformed.glb",
+    modelPath: "/models/python-transformed.glb",
+    scale: 0.8,
+    rotation: [0, 0, 0],
   },
   {
     name: "Backend Developer",
-    component: "/models/node-transformed.glb",
+    modelPath: "/models/node-transformed.glb",
+    scale: 5,
+    rotation: [0, -Math.PI / 2, 0],
   },
   {
     name: "Interactive Developer",
-    component: "/models/threejs-transformed.glb",
+    modelPath: "/models/three.js-transformed.glb",
+    scale: 0.05,
+    rotation: [0, 0, 0],
   },
   {
     name: "Project Manager",
-    component: "/models/git-svg-transformed.glb",
+    modelPath: "/models/git-svg-transformed.glb",
+    scale: 0.05,
+    rotation: [0, -Math.PI / 4, 0],
   },
 ];
 
