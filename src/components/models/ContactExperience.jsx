@@ -1,7 +1,7 @@
 import { Environment, OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import React from "react";
-import Man from "./Man";
+import { Guy } from "./Guy";
 
 const ContactExperience = () => {
   return (
@@ -16,7 +16,10 @@ const ContactExperience = () => {
         maxPolarAngle={Math.PI / 2}
         minPolarAngle={Math.PI / 2}
       />
-      <Man />
+
+      <group rotation={[0, 0.7, 0]} position={[0, -2.6, 0]} scale={2}>
+        <Guy />
+      </group>
     </Canvas>
   );
 };
