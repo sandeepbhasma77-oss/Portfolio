@@ -42,7 +42,7 @@ const TechStack = () => {
             >
               <div className="tech-card-content">
                 <div className="tech-icon-wrapper">
-                  <TechIconCardExperience model={techStackIcon} />
+                  <TechIconCardExperience model={techStackIcon.component} />
                 </div>
                 <div className="padding-x w-full">
                   <p>{techStackIcon.name}</p>

@@ -1,3 +1,8 @@
+import { GitLogo } from "../components/models/GitLogo";
+import { PythonLogo } from "../components/models/PythonLogo";
+import { ReactLogo } from "../components/models/ReactLogo";
+import { ThreejsLogo } from "../components/models/ThreejsLogo";
+
 const navLinks = [
   {
     name: "Work",
@@ -78,31 +83,54 @@ const abilities = [
   },
 ];
 
+// const techStackIcons = [
+//   {
+//     name: "React Developer",
+//     modelPath: "/models/react.glb",
+//     color: "blue",
+//   },
+//   {
+//     name: "AWS Developer",
+//     modelPath: "/models/aws.glb",
+//     color: "orange",
+//   },
+//   {
+//     name: "Javascript Developer",
+//     modelPath: "/models/javascript.glb",
+//     color: "green",
+//   },
+//   {
+//     name: "Interactive Developer",
+//     modelPath: "/models/python.glb",
+//     color: "yellow",
+//   },
+//   {
+//     name: "Project Manager",
+//     modelPath: "/models/git-svg.glb",
+//     color: "red",
+//   },
+// ];
+
 const techStackIcons = [
   {
     name: "React Developer",
-    modelPath: "/models/react_logo-transformed.glb",
-    scale: 1,
+    component: ReactLogo,
+  },
+  {
+    name: "Next.js",
+    component: ReactLogo,
   },
   {
     name: "Python Developer",
-    modelPath: "/models/python-transformed.glb",
-    scale: 0.8,
-  },
-  {
-    name: "Backend Developer",
-    modelPath: "/models/node-transformed.glb",
-    scale: 5,
+    component: PythonLogo,
   },
   {
     name: "Interactive Developer",
-    modelPath: "/models/three.js-transformed.glb",
-    scale: 0.05,
+    component: ThreejsLogo,
   },
   {
     name: "Project Manager",
-    modelPath: "/models/git-svg-transformed.glb",
-    scale: 0.05,
+    component: GitLogo,
   },
 ];
 
