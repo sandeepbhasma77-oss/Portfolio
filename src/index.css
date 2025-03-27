@@ -4,8 +4,8 @@
 :root {
   --gradient: radial-gradient(
     circle,
-    hsla(175, 79%, 63%, 1) 0%,
-    hsla(82, 96%, 57%, 1) 100%
+    #e5e5e5 0%,
+    #fff 100%
   );
 }
 
@@ -287,14 +287,14 @@ section {
   }
 
   .tech-card-animated-bg {
-    @apply absolute left-0 bottom-[-100%] w-full h-full bg-[#89fc00] group-hover:bottom-0 transition-all duration-700;
+    @apply absolute left-0 bottom-[-100%] w-full h-full bg-[#e5e5e5] group-hover:bottom-0 transition-all duration-700;
   }
 
   .tech-card-content {
     @apply flex flex-col md:justify-center items-center xl:gap-5 xl:h-[50vh] overflow-hidden relative z-10 group-hover:cursor-grab;
 
     & p {
-      @apply text-lg 2xl:text-2xl font-semibold text-white-50 md:text-center group-hover:text-black transition-colors duration-700 ease-in-out;
+      @apply text-lg 2xl:text-2xl pb-5 xl:pb-0 font-semibold text-white-50 text-center group-hover:text-black transition-colors duration-700 ease-in-out;
     }
   }
 
