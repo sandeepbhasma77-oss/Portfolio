@@ -6,11 +6,12 @@ import Button from "../components/Button";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import Badge from "../components/Badge";
+import { words } from "../constants";
 
 const Hero = () => {
   useGSAP(() => {
     gsap.fromTo(
-      ".hero-text",
+      ".hero-text h1",
       {
         y: 50,
         opacity: 0,
@@ -18,7 +19,7 @@ const Hero = () => {
       {
         y: 0,
         opacity: 1,
-        stagger: 0.1,
+        stagger: 0.2,
         duration: 1,
         ease: "power2.inOut",
       }
@@ -37,15 +38,26 @@ const Hero = () => {
           <div className="flex flex-col gap-7">
             <Badge text="🧠 Crafting Digital Solutions" />
 
-            <h1 className="hero-heading">
-              <span className="hero-text">Transform</span>
-              <span className="inline-block mx-3 overflow-hidden hero-text">
-                <img src="/images/person.png" className="hero-img" />
-              </span>
-              <span className="hero-text">
-                Ideas into Seamless Digital Experiences
-              </span>
-            </h1>
+            <div className="hero-text">
+              <h1>
+                Transform
+                <span className="slide">
+                  <span className="wrapper">
+                    {words.map((word, index) => (
+                      <span
+                        key={index}
+                        className="flex items-center md:gap-3 gap-1 pb-2"
+                      >
+                        <img src="/images/person.png" alt="person" />
+                        <span>{word}</span>
+                      </span>
+                    ))}
+                  </span>
+                </span>
+              </h1>
+              <h1>into Seamless</h1>
+              <h1>Digital Experiences</h1>
+            </div>
 
             <p className="text-white-50 md:text-xl">
               Hi, I’m Adrian, a developer based in Croatia with a passion for

@@ -17,7 +17,16 @@ const navLinks = [
   },
 ];
 
-const words = ["Ideas", "Concepts", "Designs", "Code"];
+const words = [
+  "Ideas",
+  "Concepts",
+  "Designs",
+  "Code",
+  "Ideas",
+  "Concepts",
+  "Designs",
+  "Code",
+];
 
 const counterItems = [
   { value: 15, suffix: "+", label: "Years of Experience" },
