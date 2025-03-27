@@ -101,14 +101,14 @@ section {
   }
 
   .navbar {
-    @apply fixed w-full left-1/2 -translate-x-1/2 z-[100] transition-all duration-300 ease-in-out;
+    @apply fixed w-full left-1/2 py-5 px-5 md:px-10 xl:px-20 -translate-x-1/2 z-[100] transition-all duration-300 ease-in-out;
 
     &.scrolled {
-      @apply top-0 bg-black py-5 px-5 md:px-10 xl:px-20;
+      @apply top-0 bg-black ;
     }
 
     &.not-scrolled {
-      @apply top-10 bg-transparent py-0 px-5 md:px-20 xl:px-60 2xl:px-96;
+      @apply top-10 bg-transparent;
     }
 
     .inner {
