@@ -3,6 +3,7 @@ import {
   Float,
   Lightformer,
   OrbitControls,
+  Sparkles,
 } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import React, { useRef } from "react";
@@ -58,6 +59,7 @@ const HeroExperience = () => {
   return (
     <Canvas camera={{ position: [0, 0, 5] }}>
       <ambientLight intensity={0.3} />
+      <pointLight position={[0, 0, 0]} intensity={10} color={"#2d00f7"} />
 
       {/* 
       <Float speed={1.5} rotationIntensity={0.4} floatIntensity={0.6}>
