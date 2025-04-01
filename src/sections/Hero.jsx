@@ -69,7 +69,7 @@ const Hero = () => {
 
         {/* RIGHT: 3D Model or Visual */}
         <figure>
-          <div className="border w-full h-full">
+          <div className="w-full h-full">
             <HeroExperience />
           </div>
         </figure>
