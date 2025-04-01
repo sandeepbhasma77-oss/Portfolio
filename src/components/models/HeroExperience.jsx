@@ -1,89 +1,43 @@
-import {
-  Environment,
-  Float,
-  Lightformer,
-  OrbitControls,
-  Sparkles,
-} from "@react-three/drei";
+import { OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
-import React, { useRef } from "react";
-import { SciFiLaptop } from "./Sci-laptop";
-import { Pc } from "./Pc";
-
-const Lightformers = () => {
-  const groupRef = useRef();
-
-  return (
-    <group ref={groupRef}>
-      {/* Top Light */}
-      <Lightformer
-        intensity={4}
-        position={[0, 5, 0]}
-        scale={[10, 2, 1]}
-        color="white"
-        form="rect"
-      />
-
-      {/* Back Light */}
-      <Lightformer
-        intensity={2}
-        position={[0, 0, -5]}
-        scale={[5, 5, 1]}
-        color="cyan"
-        form="circle"
-      />
-
-      {/* Side Lights */}
-      <Lightformer
-        intensity={3}
-        position={[5, 1, 0]}
-        rotation={[0, -Math.PI / 2, 0]}
-        scale={[2, 4, 1]}
-        color="blue"
-        form="ring"
-      />
-
-      <Lightformer
-        intensity={3}
-        position={[-5, 1, 0]}
-        rotation={[0, Math.PI / 2, 0]}
-        scale={[2, 4, 1]}
-        color="magenta"
-        form="ring"
-      />
-    </group>
-  );
-};
+import { Room } from "./Room";
+import * as THREE from "three";
 
 const HeroExperience = () => {
   return (
-    <Canvas camera={{ position: [0, 0, 5] }}>
-      <ambientLight intensity={0.3} />
-      <pointLight position={[0, 0, 0]} intensity={10} color={"#2d00f7"} />
+    <Canvas camera={{ position: [0, 0, 15], fov: 45 }} shadows>
+      <OrbitControls />
+      <ambientLight intensity={0.3} color="#ffffff" />
 
-      {/* 
-      <Float speed={1.5} rotationIntensity={0.4} floatIntensity={0.6}>
-        <group scale={1.3} position={[0, -2, 0]} rotation={[-0.5, 0, 0]}>
-          <SciFiLaptop />
-        </group>
-      </Float>
-      */}
+      <directionalLight position={[0, 7, 0]} intensity={1.5} color="#780000" />
 
-      <Environment resolution={256}>
-        <Lightformers />
-      </Environment>
-
-      <OrbitControls
-        minDistance={2}
-        maxDistance={5}
-        minPolarAngle={Math.PI / 2}
-        maxPolarAngle={Math.PI / 2}
-        minAzimuthAngle={-Math.PI / 3}
-        maxAzimuthAngle={Math.PI / 3}
+      <spotLight
+        position={[0, 15, 0]}
+        angle={0.4}
+        decay={0.5}
+        penumbra={0.9}
+        intensity={50}
+        color="#0466c8"
+        castShadow
+        shadow-mapSize-width={1024}
+        shadow-mapSize-height={1024}
       />
 
-      <group scale={0.07} position={[0, -2, 0]}>
-        <Pc />
+      <spotLight
+        position={[0.1, 0.2, 0.3]}
+        angle={0.7}
+        decay={0.5}
+        penumbra={0.9}
+        intensity={10}
+        color="#7209b7"
+        castShadow
+        shadow-mapSize-width={1024}
+        shadow-mapSize-height={1024}
+      />
+
+      {/* Room geometry group */}
+      <group position={[0, -3.5, 0]} rotation={[0, -Math.PI / 4, 0]}>
+        <Room />
       </group>
     </Canvas>
   );

@@ -25,7 +25,6 @@ const Hero = () => {
       }
     );
   });
-
   return (
     <section id="hero" className="relative overflow-hidden">
       <div className="absolute top-0 left-0 z-10">
@@ -70,7 +69,7 @@ const Hero = () => {
 
         {/* RIGHT: 3D Model or Visual */}
         <figure>
-          <div className="xl:absolute xl:left-96 left-0 xl:top-0 w-full h-full">
+          <div className="border w-full h-full">
             <HeroExperience />
           </div>
         </figure>
