@@ -13,16 +13,16 @@ import Navbar from "./components/NavBar";
 const App = () => {
   return (
     <div>
-      <Navbar />
+      {/* <Navbar />
       <Hero />
       <ShowcaseSection />
       <LogoShowcase />
       <FeatureCards />
       <Experience />
       <TechStack />
-      <Testimonials />
+      <Testimonials /> */}
       <Contact />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };
