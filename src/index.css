@@ -85,7 +85,7 @@ section {
   }
 
   .hero-text {
-    @apply flex flex-col justify-center md:text-6xl text-3xl font-semibold;
+    @apply flex flex-col justify-center md:text-[60px] text-[30px] font-semibold;
     img {
       @apply size-8 md:size-10 object-contain;
     }
