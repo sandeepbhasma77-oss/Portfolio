@@ -2,9 +2,8 @@ import React from "react";
 import TitleHeader from "../components/TitleHeader";
 import Button from "../components/Button";
 import { Canvas } from "@react-three/fiber";
-import { Environment, OrbitControls } from "@react-three/drei";
+import { OrbitControls } from "@react-three/drei";
 import { Computer } from "../components/models/Computer";
-import * as THREE from "three";
 
 const Contact = () => {
   return (
@@ -49,7 +48,7 @@ const Contact = () => {
               </form>
             </div>
           </div>
-          <div className="xl:col-span-7">
+          <div className="xl:col-span-7 min-h-96">
             <div className="bg-[#cd7c2e] w-full h-full hover:cursor-grab rounded-3xl overflow-hidden">
               <Canvas shadows camera={{ position: [0, 3, 7], fov: 45 }}>
                 <ambientLight intensity={0.5} color="#fff4e6" />

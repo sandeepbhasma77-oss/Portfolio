@@ -13,7 +13,7 @@ const Button = ({ text, className, id }) => {
           window.scrollTo({ top, behavior: "smooth" });
         }
       }}
-      className={`${className} cursor-pointer`}
+      className={`${className} relative z-20 cursor-pointer`}
     >
       <div className="cta-button group">
         <div className="bg-circle" />

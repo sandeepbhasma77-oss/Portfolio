@@ -81,11 +81,11 @@ section {
   }
 
   .hero-layout {
-    @apply relative z-10 xl:mt-20 mt-32 h-dvh grid xl:grid-cols-2 grid-cols-1;
+    @apply relative z-10 xl:mt-20 mt-32 md:h-dvh h-[80vh] flex xl:items-center items-start justify-center;
   }
 
   .hero-text {
-    @apply flex flex-col justify-center md:text-[60px] text-[30px] font-semibold;
+    @apply flex flex-col justify-center md:text-[60px] text-[30px] font-semibold relative z-10 pointer-events-none;
     img {
       @apply size-8 md:size-10 object-contain;
     }
@@ -106,7 +106,7 @@ section {
     }
 
     &.not-scrolled {
-      @apply top-10 bg-transparent;
+      @apply md:top-10 top-0 bg-transparent;
     }
 
     .inner {
@@ -210,7 +210,7 @@ section {
 
   .cta-button .text {
     @apply uppercase md:text-lg text-black transition-all duration-500
-      group-hover:text-white-50 group-hover:-translate-x-5 translate-x-0;
+      group-hover:text-white-50 group-hover:-translate-x-5 xl:translate-x-0 -translate-x-5;
   }
 
   .cta-button .arrow-wrapper {
@@ -219,7 +219,7 @@ section {
   }
 
   .cta-button .arrow {
-    @apply size-5 -translate-y-32 group-hover:translate-y-0 transition-all duration-500;
+    @apply size-5 xl:-translate-y-32 translate-y-0 animate-bounce group-hover:translate-y-0 transition-all duration-500;
   }
 
   .card-border {

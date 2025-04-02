@@ -7,7 +7,7 @@ import HeroLights from "./HeroLights";
 import Particles from "./Particles";
 
 const HeroExperience = () => {
-  // const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
+  const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
   const isTablet = useMediaQuery({ query: "(max-width: 1024px)" });
 
   return (
@@ -22,6 +22,7 @@ const HeroExperience = () => {
         enablePan={false}
         enableZoom={isTablet ? false : true}
         maxDistance={20}
+        minDistance={5}
         minPolarAngle={Math.PI / 5}
         maxPolarAngle={Math.PI / 2}
       />
@@ -29,7 +30,11 @@ const HeroExperience = () => {
       <HeroLights />
       <Particles count={100} />
 
-      <group scale={1} position={[0, -2.5, 0]} rotation={[0, -Math.PI / 4, 0]}>
+      <group
+        scale={isMobile ? 0.7 : 1}
+        position={[0, -3.5, 0]}
+        rotation={[0, -Math.PI / 4, 0]}
+      >
         <Model />
       </group>
     </Canvas>

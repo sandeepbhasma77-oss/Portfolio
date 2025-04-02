@@ -59,7 +59,7 @@ const Hero = () => {
               <h1>that Deliver Results</h1>
             </div>
 
-            <p className="text-white-50 md:text-xl">
+            <p className="text-white-50 md:text-xl relative z-10 pointer-events-none">
               Hi, I’m Adrian, a developer based in Croatia with a passion for
               code.
             </p>
@@ -74,7 +74,7 @@ const Hero = () => {
 
         {/* RIGHT: 3D Model or Visual */}
         <figure>
-          <div className="w-[50%] h-full min-h-[50vh] absolute top-0 right-0">
+          <div className="xl:w-[70%] w-full h-full min-h-[50vh] absolute xl:-top-20 top-24 right-0">
             <HeroExperience />
           </div>
         </figure>
