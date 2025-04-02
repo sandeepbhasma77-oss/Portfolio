@@ -118,7 +118,7 @@ section {
     }
 
     nav.desktop {
-      @apply hidden md:flex items-center;
+      @apply hidden lg:flex items-center;
 
       ul {
         @apply flex space-x-8;
@@ -138,49 +138,13 @@ section {
     }
 
     .contact-btn {
-      @apply hidden md:flex;
+      @apply flex;
 
       .inner {
-        @apply px-4 py-2 rounded-xl bg-white text-black group-hover:bg-black-50 transition-colors duration-300;
+        @apply px-5 py-2 rounded-lg bg-white text-black group-hover:bg-black-50 transition-colors duration-300;
 
         span {
           @apply group-hover:text-white transition-colors duration-300;
-        }
-      }
-    }
-
-    .mobile-toggle {
-      @apply md:hidden text-white relative z-50;
-    }
-
-    .mobile-menu {
-      @apply fixed w-80 top-16 right-5 rounded-xl bg-black-50 z-40 flex flex-col pt-24 px-6 md:hidden transition-transform duration-300 ease-in-out;
-
-      &.open {
-        @apply translate-x-0;
-      }
-
-      &.closed {
-        @apply translate-x-[150%];
-      }
-
-      ul {
-        @apply flex flex-col space-y-5 items-end;
-
-        li {
-          @apply text-white text-xl relative;
-
-          span {
-            @apply transition-colors duration-300 hover:text-white-50;
-          }
-
-          .underline {
-            @apply absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full;
-          }
-        }
-
-        .cta {
-          @apply my-5 bg-white text-black px-4 py-2 w-full rounded hover:bg-gray-200;
         }
       }
     }
