@@ -2,6 +2,9 @@ import { useRef } from "react";
 import gsap from "gsap";
 import { counterItems } from "../constants";
 import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/all";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export default function AnimatedCounter() {
   const counterRef = useRef(null);
@@ -21,6 +24,10 @@ export default function AnimatedCounter() {
         duration: 2.5,
         ease: "power2.out",
         snap: { innerText: 1 }, // Ensures whole numbers
+        scrollTrigger: {
+          trigger: "#counter",
+          start: "top center",
+        },
         // Add the suffix after counting is complete
         onComplete: () => {
           numberElement.textContent = `${item.value}${item.suffix}`;
