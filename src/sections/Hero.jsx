@@ -64,13 +64,17 @@ const Hero = () => {
               code.
             </p>
 
-            <Button text="See My Work" className="md:w-80 md:h-16 w-60 h-12" />
+            <Button
+              text="See My Work"
+              className="md:w-80 md:h-16 w-60 h-12"
+              id={"counter"}
+            />
           </div>
         </header>
 
         {/* RIGHT: 3D Model or Visual */}
         <figure>
-          <div className="w-full h-full min-h-[50vh]">
+          <div className="w-[50%] h-full min-h-[50vh] absolute top-0 right-0">
             <HeroExperience />
           </div>
         </figure>
