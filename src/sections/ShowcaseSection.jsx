@@ -1,11 +1,11 @@
-import Badge from "../components/Badge";
 import { useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
+
 gsap.registerPlugin(ScrollTrigger);
 
-export default function AppShowcase() {
+const AppShowcase = () => {
   const sectionRef = useRef(null);
   const rydeRef = useRef(null);
   const libraryRef = useRef(null);
@@ -86,3 +86,5 @@ export default function AppShowcase() {
     </div>
   );
 }
+
+export default AppShowcase;

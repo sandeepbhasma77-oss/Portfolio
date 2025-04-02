@@ -1,8 +1,8 @@
-import React from "react";
+import {  OrbitControls } from "@react-three/drei";
+import { Canvas } from "@react-three/fiber";
+
 import TitleHeader from "../components/TitleHeader";
 import Button from "../components/Button";
-import { Canvas } from "@react-three/fiber";
-import { OrbitControls } from "@react-three/drei";
 import { Computer } from "../components/models/Computer";
 
 const Contact = () => {

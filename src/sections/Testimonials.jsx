@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
 import { testimonials } from "../constants";
 import TitleHeader from "../components/TitleHeader";
 

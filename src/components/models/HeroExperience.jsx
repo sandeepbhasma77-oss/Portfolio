@@ -1,8 +1,9 @@
 import { OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import * as THREE from "three";
-import { Model } from "./Optimized-room";
 import { useMediaQuery } from "react-responsive";
+
+import { Model } from "./Optimized-room";
 import HeroLights from "./HeroLights";
 import Particles from "./Particles";
 

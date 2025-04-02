@@ -1,16 +1,15 @@
 import { useState, useEffect } from "react";
+
 import { navLinks } from "../constants";
 
-export default function Navbar() {
+const NavBar = () => {
   const [scrolled, setScrolled] = useState(false);
 
-  // Handle scroll effect
   useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 10);
-    };
+    const handleScroll = () => setScrolled(window.scrollY > 10);
 
     window.addEventListener("scroll", handleScroll);
+
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -23,10 +22,10 @@ export default function Navbar() {
 
         <nav className="desktop">
           <ul>
-            {navLinks.map((item, index) => (
-              <li key={index} className="group">
-                <a href={item.link}>
-                  <span>{item.name}</span>
+            {navLinks.map(({ link, name }) => (
+              <li key={name} className="group">
+                <a href={link}>
+                  <span>{name}</span>
                   <span className="underline" />
                 </a>
               </li>
@@ -43,3 +42,5 @@ export default function Navbar() {
     </header>
   );
 }
+
+export default NavBar;

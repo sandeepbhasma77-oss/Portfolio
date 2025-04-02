@@ -1,4 +1,3 @@
-import React from "react";
 import Testimonials from "./sections/Testimonials";
 import Footer from "./sections/Footer";
 import Contact from "./sections/Contact";
@@ -10,21 +9,19 @@ import LogoShowcase from "./sections/LogoShowcase";
 import FeatureCards from "./sections/FeatureCards";
 import Navbar from "./components/NavBar";
 
-const App = () => {
-  return (
-    <div>
-      <Navbar />
-      <Hero />
-      <ShowcaseSection />
-      <LogoShowcase />
-      <FeatureCards />
-      <Experience />
-      <TechStack />
-      <Testimonials />
-      <Contact />
-      <Footer />
-    </div>
-  );
-};
+const App = () => (
+  <>
+    <Navbar />
+    <Hero />
+    <ShowcaseSection />
+    <LogoShowcase />
+    <FeatureCards />
+    <Experience />
+    <TechStack />
+    <Testimonials />
+    <Contact />
+    <Footer />
+  </>
+);
 
 export default App;

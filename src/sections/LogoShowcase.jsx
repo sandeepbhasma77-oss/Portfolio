@@ -1,11 +1,16 @@
-import React from "react";
 import { logoIconsList } from "../constants";
-import LogoIcon from "../components/LogoIcon";
+
+const LogoIcon = ({ icon }) => {
+  return (
+    <div className="flex-none flex-center marquee-item">
+      <img src={icon.imgPath} alt={icon.name} />
+    </div>
+  );
+};
 
 const LogoShowcase = () => {
   return (
     <div className="md:my-20 my-10 relative">
-      {/* Gradients edges */}
       <div className="gradient-edge" />
       <div className="gradient-edge" />
 
@@ -14,6 +19,7 @@ const LogoShowcase = () => {
           {logoIconsList.map((icon, index) => (
             <LogoIcon key={index} icon={icon} />
           ))}
+          
           {logoIconsList.map((icon, index) => (
             <LogoIcon key={index} icon={icon} />
           ))}
