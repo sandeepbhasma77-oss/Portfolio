@@ -2,8 +2,12 @@ import { OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import * as THREE from "three";
 import { Model } from "./Optimized-room";
+import { useMediaQuery } from "react-responsive";
 
 const HeroExperience = () => {
+  const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
+  const isTablet = useMediaQuery({ query: "(max-width: 1024px)" });
+
   return (
     <Canvas
       camera={{ position: [0, 0, 15], fov: 45 }}
@@ -15,6 +19,7 @@ const HeroExperience = () => {
     >
       <OrbitControls
         enablePan={false}
+        enableZoom={isTablet ? false : true}
         maxDistance={20}
         minPolarAngle={Math.PI / 5}
         maxPolarAngle={Math.PI / 2}
@@ -42,7 +47,7 @@ const HeroExperience = () => {
       <pointLight position={[0, 1, 0]} intensity={30} color="#4cc9f0" />
 
       <group
-        scale={1.3}
+        scale={isMobile ? 1 : 1.3}
         position={[0, -3.5, 0]}
         rotation={[0, -Math.PI / 4, 0]}
       >
