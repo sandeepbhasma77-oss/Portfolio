@@ -193,18 +193,18 @@ section {
       @apply mx-auto;
     }
 
-    .grid {
-      @apply grid grid-cols-1 xl:grid-cols-12 gap-10;
+    .showcaselayout {
+      @apply flex xl:flex-row flex-col gap-10 justify-between;
     }
 
     .first-project-wrapper {
-      @apply lg:col-span-7 h-full flex flex-col justify-between;
+      @apply h-full flex flex-col justify-between xl:w-[60%];
 
       .image-wrapper {
-        @apply h-[80%];
+        @apply xl:h-[70vh] md:h-[50vh] h-96 relative;
 
         img {
-          @apply w-full h-full object-cover rounded-xl;
+          @apply w-full h-full object-cover rounded-xl absolute inset-0;
         }
       }
 
@@ -216,22 +216,20 @@ section {
         }
 
         h2 {
-          @apply text-2xl md:text-3xl lg:text-4xl font-bold xl:max-w-[40vw];
+          @apply text-2xl md:text-3xl lg:text-4xl font-bold;
         }
       }
     }
 
     .project-list-wrapper {
-      @apply xl:col-span-5 flex md:flex-row flex-col xl:flex-col gap-5;
+      @apply flex md:flex-row flex-col xl:flex-col gap-10 xl:w-[40%];
 
-      .project {
-        img {
-          @apply w-full object-cover;
-        }
+      img {
+        @apply w-full h-full object-cover rounded-xl absolute inset-0;
+      }
 
-        h2 {
-          @apply text-xl md:text-2xl font-bold mt-5;
-        }
+      h2 {
+        @apply text-lg md:text-xl lg:text-2xl font-semibold mt-5;
       }
     }
   }
@@ -257,7 +255,7 @@ section {
   }
 
   .cta-button .arrow {
-    @apply size-7 -translate-x-32 group-hover:translate-x-0 transition-all duration-500;
+    @apply size-5 -translate-y-32 group-hover:translate-y-0 transition-all duration-500;
   }
 
   .card-border {
@@ -324,9 +322,9 @@ section {
   }
 
   .footer {
-    @apply my-10 md:mt-20 mt-10 text-white-50 px-5 md:px-20 xl:px-0 flex items-center justify-center;
+    @apply my-10 md:mt-20 mt-10 text-white-50 px-5 md:px-20 xl:px-20 flex items-center justify-center;
 
-    .container {
+    .footer-container {
       @apply grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-0 w-full;
     }
 

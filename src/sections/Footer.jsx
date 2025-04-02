@@ -4,7 +4,7 @@ import { socialImgs } from "../constants";
 const Footer = () => {
   return (
     <footer className="footer">
-      <div className="container">
+      <div className="footer-container">
         <div className="flex flex-col justify-center">
           <p>Terms & Conditions</p>
         </div>

@@ -18,7 +18,7 @@ export default function Navbar() {
   return (
     <header className={`navbar ${scrolled ? "scrolled" : "not-scrolled"}`}>
       <div className="inner">
-        <a href="/" className="logo">
+        <a href="#hero" className="logo">
           Adrian JSM
         </a>
 
