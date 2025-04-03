@@ -1,5 +1,3 @@
-import React from "react";
-
 const ExpContent = ({ expContent }) => {
   return (
     <div className="card-border rounded-xl p-10">

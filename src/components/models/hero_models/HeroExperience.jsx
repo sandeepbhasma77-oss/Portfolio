@@ -3,7 +3,7 @@ import { Canvas } from "@react-three/fiber";
 import * as THREE from "three";
 import { useMediaQuery } from "react-responsive";
 
-import { Model } from "./Optimized-room";
+import { Room } from "./Room";
 import HeroLights from "./HeroLights";
 import Particles from "./Particles";
 
@@ -36,7 +36,7 @@ const HeroExperience = () => {
         position={[0, -3.5, 0]}
         rotation={[0, -Math.PI / 4, 0]}
       >
-        <Model />
+        <Room />
       </group>
     </Canvas>
   );
