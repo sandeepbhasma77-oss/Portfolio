@@ -1,12 +1,13 @@
 import { useRef } from "react";
 import gsap from "gsap";
-import { counterItems } from "../constants";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/all";
 
+import { counterItems } from "../constants";
+
 gsap.registerPlugin(ScrollTrigger);
 
-export default function AnimatedCounter() {
+const AnimatedCounter = () => {
   const counterRef = useRef(null);
   const countersRef = useRef([]);
 
@@ -54,4 +55,6 @@ export default function AnimatedCounter() {
       </div>
     </div>
   );
-}
+};
+
+export default AnimatedCounter;
