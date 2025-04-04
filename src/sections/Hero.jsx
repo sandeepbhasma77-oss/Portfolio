@@ -65,7 +65,7 @@ const Hero = () => {
 
         {/* RIGHT: 3D Model or Visual */}
         <figure>
-          <div className="xl:w-[70%] w-full h-full min-h-[50vh] absolute xl:-top-20 top-24 right-0">
+          <div className="xl:w-[70%] w-full h-full min-h-[50vh] absolute xl:-top-20 top-24 -right-20">
             <HeroExperience />
           </div>
         </figure>
