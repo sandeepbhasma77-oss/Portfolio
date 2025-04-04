@@ -13,6 +13,7 @@ const HeroExperience = () => {
 
   return (
     <Canvas camera={{ position: [0, 0, 15], fov: 45 }}>
+      {/* deep blue ambient */}
       <ambientLight intensity={0.2} color="#1a1a40" />
       {/* Configure OrbitControls to disable panning and control zoom based on device type */}
       <OrbitControls
@@ -25,7 +26,6 @@ const HeroExperience = () => {
       />
 
       <Suspense fallback={null}>
-        {/* deep blue ambient */}
         <HeroLights />
         <Particles count={100} />
         <group

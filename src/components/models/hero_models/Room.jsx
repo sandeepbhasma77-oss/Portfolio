@@ -16,7 +16,6 @@ export function Room(props) {
 
   const curtainMaterial = new THREE.MeshPhongMaterial({
     color: "#d90429",
-    roughness: 1,
   });
 
   const bodyMaterial = new THREE.MeshPhongMaterial({
@@ -25,27 +24,22 @@ export function Room(props) {
 
   const tableMaterial = new THREE.MeshPhongMaterial({
     color: "#582f0e",
-    roughness: 1,
   });
 
   const radiatorMaterial = new THREE.MeshPhongMaterial({
     color: "#fff",
-    roughness: 0,
   });
 
   const compMaterial = new THREE.MeshStandardMaterial({
     color: "#fff",
-    roughness: 1,
   });
 
   const pillowMaterial = new THREE.MeshPhongMaterial({
     color: "#8338ec",
-    roughness: 1,
   });
 
   const chairMaterial = new THREE.MeshPhongMaterial({
     color: "#000",
-    roughness: 1,
   });
 
   return (
