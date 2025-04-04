@@ -10,8 +10,8 @@ const Hero = () => {
   useGSAP(() => {
     gsap.fromTo(
       ".hero-text h1",
-      { y: 50, opacity: 0, },
-      { y: 0, opacity: 1, stagger: 0.2, duration: 1, ease: "power2.inOut", }
+      { y: 50, opacity: 0 },
+      { y: 0, opacity: 1, stagger: 0.2, duration: 1, ease: "power2.inOut" }
     );
   });
 
@@ -65,7 +65,7 @@ const Hero = () => {
 
         {/* RIGHT: 3D Model or Visual */}
         <figure>
-          <div className="xl:w-[70%] w-full h-full min-h-[50vh] absolute xl:-top-20 top-24 -right-20">
+          <div className="hero-3d-layout">
             <HeroExperience />
           </div>
         </figure>
