@@ -211,7 +211,7 @@ section {
   }
 
   .cta-button {
-    @apply px-4 py-4 rounded-lg bg-black-200 flex justify-center items-center relative overflow-hidden;
+    @apply px-4 py-4 rounded-lg bg-black-200 flex justify-center items-center relative cursor-pointer overflow-hidden;
 
     .bg-circle {
       @apply absolute -right-10 origin-center top-1/2 -translate-y-1/2 
@@ -288,7 +288,7 @@ section {
       @apply w-full px-4 py-4 md:text-base text-sm placeholder:text-blue-50 bg-blue-100 rounded-md;
     }
 
-    button {
+    a {
       @apply w-full py-4 bg-white text-black font-semibold rounded-md flex justify-center items-center gap-2;
 
       img {
