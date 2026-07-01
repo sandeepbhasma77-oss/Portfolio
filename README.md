@@ -7,4 +7,4 @@ and skills .
 - contact . html Contact information
 - style . css Stylesheet
 # # Author
-Your Name
+Sandeep Bhasma Tharu
