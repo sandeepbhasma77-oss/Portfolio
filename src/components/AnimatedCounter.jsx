@@ -13,25 +13,27 @@ const AnimatedCounter = () => {
 
   useGSAP(() => {
     countersRef.current.forEach((counter, index) => {
-      const numberElement = counter.querySelector(".counter-number");
+      const numberElement = counter.querySelector(".counter-value");
       const item = counterItems[index];
 
       // Set initial value to 0
       gsap.set(numberElement, { innerText: "0" });
 
+      if (typeof item.value !== "number") {
+        numberElement.textContent = item.value;
+        return;
+      }
+
       // Create the counting animation
       gsap.to(numberElement, {
         innerText: item.value,
-        duration: 2.5,
+        duration: 0.8,
         ease: "power2.out",
         snap: { innerText: 1 }, // Ensures whole numbers
         scrollTrigger: {
           trigger: "#counter",
           start: "top center",
-        },
-        // Add the suffix after counting is complete
-        onComplete: () => {
-          numberElement.textContent = `${item.value}${item.suffix}`;
+          once: true,
         },
       });
     }, counterRef);
@@ -47,7 +49,8 @@ const AnimatedCounter = () => {
             className="bg-zinc-900 rounded-lg p-10 flex flex-col justify-center"
           >
             <div className="counter-number text-white-50 text-5xl font-bold mb-2">
-              0 {item.suffix}
+              <span className="counter-value">0</span>
+              <span>{item.suffix}</span>
             </div>
             <div className="text-white-50 text-lg">{item.label}</div>
           </div>

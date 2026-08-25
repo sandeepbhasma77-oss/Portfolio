@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" role="img" aria-labelledby="title desc">
+  <title id="title">MedStore Inventory Management System dashboard</title>
+  <desc id="desc">Dashboard showing medicine inventory, stock quantities, sales, restocking and invoice summary.</desc>
+  <rect width="1440" height="900" fill="#eef4f5"/>
+  <rect width="240" height="900" fill="#123b43"/>
+  <text x="36" y="64" fill="#ffffff" font-family="Arial,sans-serif" font-size="26" font-weight="700">MedStore</text>
+  <text x="36" y="91" fill="#91c8c6" font-family="Arial,sans-serif" font-size="13">INVENTORY SYSTEM</text>
+  <rect x="28" y="140" width="184" height="48" rx="8" fill="#2a8b88"/>
+  <text x="52" y="171" fill="#ffffff" font-family="Arial,sans-serif" font-size="15">Dashboard</text>
+  <text x="52" y="231" fill="#b4d2d2" font-family="Arial,sans-serif" font-size="15">Inventory</text>
+  <text x="52" y="281" fill="#b4d2d2" font-family="Arial,sans-serif" font-size="15">Sales &amp; Billing</text>
+  <text x="52" y="331" fill="#b4d2d2" font-family="Arial,sans-serif" font-size="15">Restocking</text>
+  <text x="52" y="381" fill="#b4d2d2" font-family="Arial,sans-serif" font-size="15">Invoices</text>
+  <text x="276" y="73" fill="#18383d" font-family="Arial,sans-serif" font-size="30" font-weight="700">Inventory Dashboard</text>
+  <text x="276" y="101" fill="#6b8184" font-family="Arial,sans-serif" font-size="14">Monitor medicines, stock levels, sales and billing</text>
+  <rect x="1075" y="52" width="125" height="42" rx="8" fill="#2a8b88"/>
+  <text x="1094" y="78" fill="#ffffff" font-family="Arial,sans-serif" font-size="14">+ Add Medicine</text>
+  <rect x="1240" y="52" width="150" height="42" rx="8" fill="#ffffff" stroke="#d5e2e2"/>
+  <text x="1260" y="78" fill="#426265" font-family="Arial,sans-serif" font-size="14">Export Report</text>
+  <g font-family="Arial,sans-serif">
+    <rect x="276" y="138" width="250" height="118" rx="12" fill="#ffffff" stroke="#d9e5e5"/>
+    <text x="300" y="171" fill="#73878a" font-size="13">TOTAL MEDICINES</text><text x="300" y="216" fill="#18383d" font-size="32" font-weight="700">248</text><text x="405" y="216" fill="#2a8b88" font-size="13">+12 this month</text>
+    <rect x="548" y="138" width="250" height="118" rx="12" fill="#ffffff" stroke="#d9e5e5"/>
+    <text x="572" y="171" fill="#73878a" font-size="13">LOW STOCK ITEMS</text><text x="572" y="216" fill="#d6634f" font-size="32" font-weight="700">18</text><text x="655" y="216" fill="#d6634f" font-size="13">Needs attention</text>
+    <rect x="820" y="138" width="250" height="118" rx="12" fill="#ffffff" stroke="#d9e5e5"/>
+    <text x="844" y="171" fill="#73878a" font-size="13">TODAY'S SALES</text><text x="844" y="216" fill="#18383d" font-size="32" font-weight="700">$2,840</text><text x="972" y="216" fill="#2a8b88" font-size="13">+8.4%</text>
+    <rect x="1092" y="138" width="298" height="118" rx="12" fill="#ffffff" stroke="#d9e5e5"/>
+    <text x="1116" y="171" fill="#73878a" font-size="13">PENDING INVOICES</text><text x="1116" y="216" fill="#18383d" font-size="32" font-weight="700">07</text><text x="1190" y="216" fill="#73878a" font-size="13">Review today</text>
+    <rect x="276" y="284" width="1114" height="66" rx="10" fill="#ffffff" stroke="#d9e5e5"/>
+    <text x="302" y="324" fill="#8a9b9d" font-size="15">Search medicine by name or code...</text><rect x="1083" y="300" width="120" height="34" rx="6" fill="#e8f3f2"/><text x="1111" y="322" fill="#287d7a" font-size="13">All Categories</text><rect x="1220" y="300" width="145" height="34" rx="6" fill="#e8f3f2"/><text x="1245" y="322" fill="#287d7a" font-size="13">Stock Status</text>
+    <rect x="276" y="378" width="760" height="420" rx="12" fill="#ffffff" stroke="#d9e5e5"/>
+    <text x="302" y="418" fill="#18383d" font-size="20" font-weight="700">Medicine Inventory</text><text x="860" y="418" fill="#2a8b88" font-size="13">View all</text>
+    <text x="302" y="460" fill="#829395" font-size="12">MEDICINE NAME</text><text x="580" y="460" fill="#829395" font-size="12">CATEGORY</text><text x="730" y="460" fill="#829395" font-size="12">STOCK</text><text x="850" y="460" fill="#829395" font-size="12">STATUS</text>
+    <path d="M302 477H1008M302 543H1008M302 609H1008M302 675H1008M302 741H1008" stroke="#e3eded"/>
+    <text x="302" y="517" fill="#23484c" font-size="14" font-weight="700">Paracetamol 500mg</text><text x="580" y="517" fill="#718487" font-size="13">Pain Relief</text><text x="730" y="517" fill="#23484c" font-size="14">124</text><rect x="840" y="498" width="86" height="27" rx="13" fill="#dff2e9"/><text x="856" y="517" fill="#32815f" font-size="12">In Stock</text>
+    <text x="302" y="583" fill="#23484c" font-size="14" font-weight="700">Amoxicillin 250mg</text><text x="580" y="583" fill="#718487" font-size="13">Antibiotic</text><text x="730" y="583" fill="#23484c" font-size="14">42</text><rect x="840" y="564" width="86" height="27" rx="13" fill="#fff0cf"/><text x="854" y="583" fill="#ac7727" font-size="12">Low Stock</text>
+    <text x="302" y="649" fill="#23484c" font-size="14" font-weight="700">Cetirizine 10mg</text><text x="580" y="649" fill="#718487" font-size="13">Allergy</text><text x="730" y="649" fill="#23484c" font-size="14">86</text><rect x="840" y="630" width="86" height="27" rx="13" fill="#dff2e9"/><text x="856" y="649" fill="#32815f" font-size="12">In Stock</text>
+    <text x="302" y="715" fill="#23484c" font-size="14" font-weight="700">Insulin Glargine</text><text x="580" y="715" fill="#718487" font-size="13">Diabetes</text><text x="730" y="715" fill="#23484c" font-size="14">16</text><rect x="840" y="696" width="86" height="27" rx="13" fill="#ffe0db"/><text x="854" y="715" fill="#bd594a" font-size="12">Restock</text>
+    <rect x="1060" y="378" width="330" height="198" rx="12" fill="#ffffff" stroke="#d9e5e5"/><text x="1086" y="418" fill="#18383d" font-size="20" font-weight="700">Recent Sales</text><text x="1086" y="465" fill="#718487" font-size="14">Invoice #MS-1048</text><text x="1300" y="465" fill="#18383d" font-size="14" font-weight="700">$420.00</text><text x="1086" y="500" fill="#718487" font-size="14">Invoice #MS-1047</text><text x="1300" y="500" fill="#18383d" font-size="14" font-weight="700">$185.50</text><text x="1086" y="535" fill="#718487" font-size="14">Invoice #MS-1046</text><text x="1300" y="535" fill="#18383d" font-size="14" font-weight="700">$96.00</text>
+    <rect x="1060" y="598" width="330" height="200" rx="12" fill="#183f45"/><text x="1086" y="638" fill="#9bd8d1" font-size="13">RESTOCKING SUMMARY</text><text x="1086" y="686" fill="#ffffff" font-size="32" font-weight="700">32 items</text><text x="1086" y="718" fill="#b9d4d3" font-size="14">arriving this week</text><rect x="1086" y="748" width="170" height="7" rx="4" fill="#2a8b88"/><rect x="1260" y="748" width="98" height="7" rx="4" fill="#5cbcb5"/>
+  </g>
+</svg>

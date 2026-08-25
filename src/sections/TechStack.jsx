@@ -2,9 +2,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
 import TitleHeader from "../components/TitleHeader";
-import TechIconCardExperience from "../components/models/tech_logos/TechIconCardExperience";
-import { techStackIcons } from "../constants";
-// import { techStackImgs } from "../constants";
+import { techStackImgs } from "../constants";
 
 const TechStack = () => {
   // Animate the tech cards in the skills section
@@ -47,7 +45,7 @@ const TechStack = () => {
               The key is set to the name of the tech stack icon, and the classnames are set to 
               card-border, tech-card, overflow-hidden, and group. The xl:rounded-full and rounded-lg 
               classes are only applied on larger screens. */}
-          {techStackIcons.map((techStackIcon) => (
+          {techStackImgs.map((techStackIcon) => (
             <div
               key={techStackIcon.name}
               className="card-border tech-card overflow-hidden group xl:rounded-full rounded-lg"
@@ -56,16 +54,23 @@ const TechStack = () => {
                   component is hovered. */}
               <div className="tech-card-animated-bg" />
               <div className="tech-card-content">
-                {/* The tech-icon-wrapper div contains the TechIconCardExperience component, 
-                    which renders the 3D model of the tech stack icon. */}
                 <div className="tech-icon-wrapper">
-                  <TechIconCardExperience model={techStackIcon} />
+                  <img src={techStackIcon.imgPath} alt={techStackIcon.name} />
                 </div>
                 {/* The padding-x and w-full classes are used to add horizontal padding to the 
                     text and make it take up the full width of the component. */}
                 <div className="padding-x w-full">
-                  {/* The p tag contains the name of the tech stack icon. */}
-                  <p>{techStackIcon.name}</p>
+                  <p>
+                    {techStackIcon.name === "Java Developer" ? (
+                      <>
+                        Java
+                        <br />
+                        Developer
+                      </>
+                    ) : (
+                      techStackIcon.name
+                    )}
+                  </p>
                 </div>
               </div>
             </div>

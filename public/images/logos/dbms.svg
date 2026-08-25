@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-labelledby="title">
+  <title>DBMS</title>
+  <ellipse cx="60" cy="36" rx="30" ry="12" fill="#2a9d8f"/>
+  <path d="M30 36v22c0 7 13 12 30 12s30-5 30-12V36c0 7-13 12-30 12S30 43 30 36z" fill="#2a9d8f"/>
+  <path d="M30 57v22c0 7 13 12 30 12s30-5 30-12V57c0 7-13 12-30 12s-30-5-30-12z" fill="#21867a"/>
+  <path d="M30 36c0 7 13 12 30 12s30-5 30-12" fill="none" stroke="#dff5ef" stroke-width="3"/>
+  <path d="M30 57c0 7 13 12 30 12s30-5 30-12" fill="none" stroke="#dff5ef" stroke-width="3"/>
+</svg>

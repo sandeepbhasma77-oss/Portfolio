@@ -7,6 +7,7 @@ import ContactExperience from "../components/models/contact/ContactExperience";
 const Contact = () => {
   const formRef = useRef(null);
   const [loading, setLoading] = useState(false);
+  const [status, setStatus] = useState("");
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -20,7 +21,24 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (loading) return;
+
+    const serviceId = import.meta.env.VITE_APP_EMAILJS_SERVICE_ID;
+    const templateId = import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID;
+    const publicKey = import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY;
+
+    if (!serviceId || !templateId || !publicKey) {
+      const subject = encodeURIComponent(`Portfolio message from ${form.name}`);
+      const body = encodeURIComponent(
+        `Name: ${form.name}\nEmail: ${form.email}\n\n${form.message}`
+      );
+      setForm({ name: "", email: "", message: "" });
+      window.location.href = `mailto:sandeepbhasma77@gmail.com?subject=${subject}&body=${body}`;
+      return;
+    }
+
     setLoading(true); // Show loading state
+    setStatus("");
 
     try {
       await emailjs.sendForm(
@@ -32,10 +50,13 @@ const Contact = () => {
 
       // Reset form and stop loading
       setForm({ name: "", email: "", message: "" });
+      setStatus("Your message has been sent successfully!");
     } catch (error) {
       console.error("EmailJS Error:", error); // Optional: show toast
+      setStatus("Message could not be sent. Please check your EmailJS settings and try again.");
     } finally {
       setLoading(false); // Always stop loading, even on error
+      setForm({ name: "", email: "", message: "" });
     }
   };
 
@@ -93,7 +114,7 @@ const Contact = () => {
                   />
                 </div>
 
-                <button type="submit">
+                  <button type="submit" disabled={loading}>
                   <div className="cta-button group">
                     <div className="bg-circle" />
                     <p className="text">
@@ -104,6 +125,11 @@ const Contact = () => {
                     </div>
                   </div>
                 </button>
+                  {status && (
+                    <p className="contact-status" role="status">
+                      {status}
+                    </p>
+                  )}
               </form>
             </div>
           </div>
